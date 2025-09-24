@@ -1,0 +1,11 @@
+# Video Files
+
+This directory should contain any local video files referenced in the portfolio:
+
+- fashion-teaser.mp4 (Fashion campaign edit video)
+
+For YouTube and Vimeo videos, only the embed IDs are needed in the data files.
+Local MP4 files should be:
+- Optimized for web (H.264 codec)
+- Reasonable file size (under 50MB for previews)
+- Multiple quality options if possible

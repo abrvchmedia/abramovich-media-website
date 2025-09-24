@@ -1,0 +1,21 @@
+# Placeholder Images
+
+This directory should contain the following thumbnail images for the portfolio:
+
+- city-of-mercy.jpg (Cinematic short film thumbnail)
+- gym-reel.jpg (Gym brand reel thumbnail)  
+- fashion.jpg (Fashion campaign edit thumbnail)
+- restaurant.jpg (Restaurant launch promo thumbnail)
+- tech.jpg (Tech startup demo thumbnail)
+- music.jpg (Indie music video thumbnail)
+
+Each image should be:
+- Aspect ratio: 16:9
+- Resolution: 1920x1080 or higher
+- Format: JPG or PNG
+- File size: Under 500KB for web optimization
+
+For now, you can use placeholder services like:
+- https://picsum.photos/1920/1080
+- https://via.placeholder.com/1920x1080
+- Or create your own branded thumbnails
