@@ -1,7 +1,7 @@
-import { buildConfig } from 'payload'
+import { buildConfig as buildPayloadConfig } from 'payload'
 import { mongooseAdapter } from '@payloadcms/db-mongodb'
 
-export default buildConfig({
+export default buildPayloadConfig({
   collections: [
     {
       slug: 'users',
