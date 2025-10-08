@@ -28,15 +28,12 @@ export default function Home() {
           <div className="max-w-6xl mx-auto">
             {/* Mobile-first responsive heading */}
             <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight px-2" style={{color: '#F7F10A'}}>
-              <span className="block sm:inline">Visuals that</span>{" "}
-              <span className="block sm:inline bg-gradient-to-r from-yellow-300 to-yellow-500 bg-clip-text text-transparent">
-                scale your vision
-              </span>
+              We Turn Obsessive Talent into Undeniable Authority.
             </h1>
             
             {/* Mobile-optimized subtitle */}
             <p className="text-lg xs:text-xl sm:text-2xl md:text-2xl text-gray-300 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-2">
-              We plan, shoot, edit, and ship content that performs on social and converts on your site.
+              For those who've mastered their craft — we build the media, systems, and brand engine that scales your influence and income.
             </p>
             
             {/* Mobile-responsive button layout */}
