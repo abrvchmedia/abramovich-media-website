@@ -1,0 +1,6 @@
+# Exclude large video files that aren't needed for deployment
+public/videos/Media Production Reel 1080.mov
+public/videos/hero-reel.mp4
+Media Production Reel v1.mp4
+*.mov
+
