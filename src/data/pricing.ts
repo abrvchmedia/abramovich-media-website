@@ -40,7 +40,7 @@ export const plans: Plan[] = [
   {
     id: "core",
     name: "Core Content Retainer",
-    pricePerMonth: 2000,
+    pricePerMonth: 3000,
     termMonths: 4,
     description: "Essential content creation with professional quality and consistent delivery.",
     includes: [
@@ -53,14 +53,14 @@ export const plans: Plan[] = [
     bestFor: ["Small businesses", "Startups", "Consistent social output"],
     addOns,
     variants: [
-      { label: "4-month", pricePerMonth: 2000, total: 8000 },
-      { label: "12-month", pricePerMonth: 1800, total: 21600 }
+      { label: "4-month", pricePerMonth: 3000, total: 12000 },
+      { label: "12-month", pricePerMonth: 2700, total: 32400 }
     ]
   },
   {
     id: "advanced",
     name: "Advanced Cinematic Retainer",
-    pricePerMonth: 3000,
+    pricePerMonth: 4000,
     termMonths: 4,
     highlight: true,
     description: "Enhanced content production with advanced cinematography and increased output.",
@@ -74,14 +74,14 @@ export const plans: Plan[] = [
     bestFor: ["Growing brands", "Coaches", "Local businesses"],
     addOns,
     variants: [
-      { label: "4-month", pricePerMonth: 3000, total: 12000 },
-      { label: "12-month", pricePerMonth: 2700, total: 32400 }
+      { label: "4-month", pricePerMonth: 4000, total: 16000 },
+      { label: "12-month", pricePerMonth: 3600, total: 43200 }
     ]
   },
   {
     id: "premium",
     name: "Premium Cinematic Content",
-    pricePerMonth: 4000,
+    pricePerMonth: 6000,
     termMonths: 4,
     description: "Complete digital presence solution with maximum content output and full-service support.",
     includes: [
@@ -96,8 +96,8 @@ export const plans: Plan[] = [
     bestFor: ["Premium brands", "Launches", "National campaigns"],
     addOns,
     variants: [
-      { label: "4-month", pricePerMonth: 4000, total: 16000 },
-      { label: "12-month", pricePerMonth: 3600, total: 43200 }
+      { label: "4-month", pricePerMonth: 6000, total: 24000 },
+      { label: "12-month", pricePerMonth: 5400, total: 64800 }
     ]
   }
 ];

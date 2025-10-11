@@ -76,8 +76,11 @@ export default function Home() {
                     <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{color: '#F7F10A'}}>
                       What We Do
                     </h2>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              From concept to delivery, we handle every aspect of your content creation
+            <h3 className="text-2xl sm:text-3xl font-bold mb-2 text-white">
+              The Authority Engine for Obsessives
+            </h3>
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
+              Turn your mastery into momentum.
             </p>
           </div>
 
