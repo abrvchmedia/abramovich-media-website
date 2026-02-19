@@ -1,0 +1,5 @@
+# Large media — host on external CDN (Cloudinary, etc.)
+public/*.m4v
+public/*.mp4
+public/*.mov
+public/*.avi
