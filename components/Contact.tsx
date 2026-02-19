@@ -43,7 +43,7 @@ export default function Contact() {
   };
 
   const inputClass =
-    "w-full px-5 py-4 bg-navyLight border border-white/5 focus:border-accent/30 rounded-xl text-white placeholder-gray-400/40 text-sm outline-none transition-colors duration-200";
+    "w-full px-5 py-4 border border-white/5 focus:border-accent/30 rounded-xl text-white placeholder-gray-400/40 text-sm outline-none transition-colors duration-200";
 
   return (
     <section id="contact" className="section-wrap relative overflow-hidden">
@@ -95,6 +95,7 @@ export default function Contact() {
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     className={inputClass}
+                    style={{ backgroundColor: "#111827", color: "#ffffff" }}
                     placeholder="Your name"
                   />
                 </div>
@@ -106,6 +107,7 @@ export default function Contact() {
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     className={inputClass}
+                    style={{ backgroundColor: "#111827", color: "#ffffff" }}
                     placeholder="your@email.com"
                   />
                 </div>
@@ -117,6 +119,7 @@ export default function Contact() {
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     className={`${inputClass} resize-none`}
+                    style={{ backgroundColor: "#111827", color: "#ffffff" }}
                     placeholder="Tell us about your project..."
                   />
                 </div>
