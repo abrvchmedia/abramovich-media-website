@@ -36,6 +36,7 @@ export default function Hero() {
     >
       {/* ── Background video ── */}
       <div className="absolute inset-0 z-0">
+        {/* Replace VIDEO_URL with your Cloudinary/CDN link */}
         <video
           autoPlay
           muted
@@ -43,7 +44,7 @@ export default function Hero() {
           playsInline
           preload="auto"
           className="absolute inset-0 w-full h-full object-cover"
-          src="/Media Production Reel v1.m4v"
+          src={process.env.NEXT_PUBLIC_HERO_VIDEO_URL || ""}
         />
 
         {/* Cinematic dark overlay — heavier at bottom so text is always legible */}
