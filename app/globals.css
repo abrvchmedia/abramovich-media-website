@@ -27,6 +27,25 @@ body {
 ::-webkit-scrollbar-track { background: #0B1120; }
 ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 4px; }
 
+/* ── Force dark background + white text on browser autofill ── */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-text-fill-color: #ffffff;
+  -webkit-box-shadow: 0 0 0px 1000px #111827 inset;
+  caret-color: #ffffff;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* ── Ensure all form inputs have white text ── */
+input, textarea {
+  color: #ffffff;
+  caret-color: #ffffff;
+}
+
 /* ─────────────────────────────────────────
    TYPOGRAPHY SYSTEM
    Using direct CSS — @apply with custom
