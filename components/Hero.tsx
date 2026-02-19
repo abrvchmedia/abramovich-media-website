@@ -34,30 +34,38 @@ export default function Hero() {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-navy"
     >
-      {/* Cinematic background */}
+      {/* ── Background video ── */}
       <div className="absolute inset-0 z-0">
-        {/* Dark overlay gradient as specified */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          className="absolute inset-0 w-full h-full object-cover"
+          src="/Media Production Reel v1.m4v"
+        />
+
+        {/* Cinematic dark overlay — heavier at bottom so text is always legible */}
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(11,17,32,0.95))",
+              "linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(11,17,32,0.75) 60%, rgba(11,17,32,0.97) 100%)",
           }}
         />
-        {/* Subtle grid texture */}
+
+        {/* Subtle vignette edges */}
         <div
-          className="absolute inset-0 opacity-[0.035]"
+          className="absolute inset-0"
           style={{
-            backgroundImage:
-              "linear-gradient(#F5E50A 1px, transparent 1px), linear-gradient(90deg, #F5E50A 1px, transparent 1px)",
-            backgroundSize: "80px 80px",
+            background:
+              "radial-gradient(ellipse at center, transparent 50%, rgba(11,17,32,0.6) 100%)",
           }}
         />
-        {/* Ambient glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[500px] rounded-full bg-accent/[0.04] blur-[140px] pointer-events-none" />
       </div>
 
-      {/* Content — max-width 900px as specified */}
+      {/* ── Content ── */}
       <div className="relative z-10 w-full max-w-[900px] mx-auto px-6 text-center">
         <motion.div initial="hidden" animate="visible" variants={container}>
           {/* Eyebrow */}
@@ -100,7 +108,7 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* Scroll cue */}
+      {/* ── Scroll cue ── */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
