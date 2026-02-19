@@ -30,8 +30,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# large media files — host these on a CDN
+# Original large source video files
 *.m4v
 *.mov
-*.mp4
 *.avi
+# Allow compressed hero video
+!public/hero-reel.mp4

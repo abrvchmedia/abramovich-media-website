@@ -1,5 +1,4 @@
-# Large media — host on external CDN (Cloudinary, etc.)
+# Original large source files — use compressed versions only
 public/*.m4v
-public/*.mp4
 public/*.mov
 public/*.avi
