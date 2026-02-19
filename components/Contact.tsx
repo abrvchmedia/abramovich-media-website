@@ -36,10 +36,26 @@ export default function Contact() {
 
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setError("");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      if (!res.ok) throw new Error("Submission failed");
+      setSubmitted(true);
+    } catch {
+      setError("Something went wrong. Please try again or email us directly.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   const inputClass =
@@ -123,8 +139,15 @@ export default function Contact() {
                     placeholder="Tell us about your project..."
                   />
                 </div>
-                <button type="submit" className="btn-cta w-full">
-                  Send Message
+                {error && (
+                  <p className="text-red-400 text-sm text-center">{error}</p>
+                )}
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="btn-cta w-full disabled:opacity-60 disabled:cursor-not-allowed disabled:scale-100"
+                >
+                  {loading ? "Sending..." : "Send Message"}
                 </button>
               </form>
             )}
