@@ -2,7 +2,6 @@
 
 import { motion, useInView, type Variants } from "framer-motion";
 import { useRef, useState } from "react";
-import Image from "next/image";
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 32 },
@@ -105,7 +104,9 @@ function ProjectCard({
   project: (typeof projects)[0];
   onPlay: () => void;
 }) {
-  const thumbnailUrl = `https://img.youtube.com/vi/${project.id}/maxresdefault.jpg`;
+  // hqdefault is always available; maxresdefault may 404 for some videos
+  const thumbnailUrl = `https://img.youtube.com/vi/${project.id}/hqdefault.jpg`;
+  const fallbackUrl  = `https://img.youtube.com/vi/${project.id}/mqdefault.jpg`;
 
   return (
     <motion.div
@@ -115,13 +116,12 @@ function ProjectCard({
     >
       {/* Thumbnail */}
       <div className="relative h-52 overflow-hidden bg-navy-light">
-        <Image
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
           src={thumbnailUrl}
           alt={project.title}
-          fill
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
-          sizes="(max-width: 768px) 100vw, 33vw"
-          unoptimized
+          onError={(e) => { (e.currentTarget as HTMLImageElement).src = fallbackUrl; }}
+          className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-300" />
