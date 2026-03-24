@@ -4,16 +4,21 @@ import { getAllPosts } from "@/backend/controllers/postController";
 const BASE_URL = "https://www.abramovichmedia.com";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const posts = await getAllPosts(true);
+  let blogPosts: MetadataRoute.Sitemap = [];
 
-  const blogPosts: MetadataRoute.Sitemap = posts.map((post) => ({
-    url: `${BASE_URL}/blog/${post.slug}`,
-    lastModified: post.updatedAt
-      ? new Date(post.updatedAt as string)
-      : new Date(post.createdAt as string),
-    changeFrequency: "weekly",
-    priority: 0.7,
-  }));
+  try {
+    const posts = await getAllPosts(true);
+    blogPosts = posts.map((post) => ({
+      url: `${BASE_URL}/blog/${post.slug}`,
+      lastModified: post.updatedAt
+        ? new Date(post.updatedAt as string)
+        : new Date(post.createdAt as string),
+      changeFrequency: "weekly" as const,
+      priority: 0.7,
+    }));
+  } catch {
+    // DB unavailable — still return static routes so Google always gets a valid sitemap
+  }
 
   return [
     {
