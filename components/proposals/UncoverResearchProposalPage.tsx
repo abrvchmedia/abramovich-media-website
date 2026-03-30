@@ -30,7 +30,10 @@ export default function UncoverResearchProposalPage() {
               Cinematography field capture proposal
             </h1>
             <p className="muted-text text-sm font-medium uppercase tracking-[0.2em]">
-              Prepared for Uncover Research — Rothy&apos;s Customer Aesthetic
+              Prepared for Amanda Ho &amp; Samantha Bergeron · Uncover Research
+            </p>
+            <p className="muted-text text-xs mt-2 tracking-wide text-gray-400">
+              Rothy&apos;s — Customer Aesthetic
             </p>
           </motion.div>
 
@@ -103,7 +106,7 @@ export default function UncoverResearchProposalPage() {
           >
             <ProposalPdfViewer
               file={PROPOSAL_PDF}
-              title="Uncover Research — Field capture (Scottsdale)"
+              title="Uncover Research — Amanda Ho & Samantha Bergeron — Scottsdale"
               w9File={W9_PDF}
               w9Label="W-9"
             />

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <title>Abramovich Media — Vector Field Mark (Light)</title>
+  <desc>Authority Infrastructure Studio — Primary Logo Mark, Light Version</desc>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="#F5F2EC"/>
+
+  <!-- Corner brackets -->
+  <g stroke="#C0B49A" stroke-width="1" fill="none" stroke-linecap="square">
+    <polyline points="36,56 36,36 56,36"/>
+    <polyline points="344,56 344,36 324,36"/>
+    <polyline points="36,344 36,364 56,364"/>
+    <polyline points="344,344 344,364 324,364"/>
+  </g>
+
+  <!-- Vector field: 7 lines converging to apex at (200, 108) -->
+
+  <!-- Line 1 — far left, dimmest -->
+  <line x1="200" y1="108" x2="70"  y2="292" stroke="#D8D0C0" stroke-width="1.2" stroke-linecap="square"/>
+  <!-- Line 2 -->
+  <line x1="200" y1="108" x2="115" y2="292" stroke="#C0B8A8" stroke-width="1.6" stroke-linecap="square"/>
+  <!-- Line 3 -->
+  <line x1="200" y1="108" x2="156" y2="292" stroke="#9A9080" stroke-width="2.0" stroke-linecap="square"/>
+  <!-- Line 4 — center, authority axis -->
+  <line x1="200" y1="108" x2="200" y2="292" stroke="#1A1710" stroke-width="3.5" stroke-linecap="square"/>
+  <!-- Line 5 -->
+  <line x1="200" y1="108" x2="244" y2="292" stroke="#9A9080" stroke-width="2.0" stroke-linecap="square"/>
+  <!-- Line 6 -->
+  <line x1="200" y1="108" x2="285" y2="292" stroke="#C0B8A8" stroke-width="1.6" stroke-linecap="square"/>
+  <!-- Line 7 — far right, dimmest -->
+  <line x1="200" y1="108" x2="330" y2="292" stroke="#D8D0C0" stroke-width="1.2" stroke-linecap="square"/>
+
+  <!-- Baseline — infrastructure horizontal rule -->
+  <line x1="64" y1="292" x2="336" y2="292" stroke="#7A5A0A" stroke-width="2.5" stroke-linecap="square"/>
+
+  <!-- Apex dot -->
+  <circle cx="200" cy="108" r="6" fill="#7A5A0A"/>
+
+</svg>
