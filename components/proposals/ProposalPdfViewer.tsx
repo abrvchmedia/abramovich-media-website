@@ -1,26 +1,16 @@
 "use client";
 
-import dynamic from "next/dynamic";
-import { useState } from "react";
-
-const ProposalPdfDocument = dynamic(() => import("./ProposalPdfDocument"), {
-  ssr: false,
-  loading: () => (
-    <div className="py-20 text-center text-sm text-gray-400">
-      Initializing document viewer…
-    </div>
-  ),
-});
-
 type Props = {
   /** Public path to PDF in /public */
   file: string;
   title: string;
 };
 
+/**
+ * Native PDF embed (iframe). Reliable on Vercel; zoom/search use the browser PDF UI.
+ * Avoids react-pdf/pdfjs worker issues that can break production builds.
+ */
 export default function ProposalPdfViewer({ file, title }: Props) {
-  const [scale, setScale] = useState(1);
-
   return (
     <div className="brand-card overflow-hidden border border-white/10 bg-navy-light/80">
       <div className="flex flex-col gap-3 border-b border-white/5 bg-[#0d1424] px-4 py-3 sm:flex-row sm:items-center sm:justify-between">
@@ -31,27 +21,6 @@ export default function ProposalPdfViewer({ file, title }: Props) {
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-2">
-          <div className="mr-2 flex items-center gap-1 rounded-md border border-white/10 bg-navy/80 p-1">
-            <button
-              type="button"
-              onClick={() => setScale((s) => Math.max(0.75, Math.round((s - 0.1) * 100) / 100))}
-              className="rounded px-2 py-1 text-xs font-bold text-gray-300 hover:bg-white/10 hover:text-white"
-              aria-label="Zoom out"
-            >
-              −
-            </button>
-            <span className="min-w-[3rem] text-center text-[10px] font-semibold uppercase tracking-wider text-gray-500">
-              {Math.round(scale * 100)}%
-            </span>
-            <button
-              type="button"
-              onClick={() => setScale((s) => Math.min(1.5, Math.round((s + 0.1) * 100) / 100))}
-              className="rounded px-2 py-1 text-xs font-bold text-gray-300 hover:bg-white/10 hover:text-white"
-              aria-label="Zoom in"
-            >
-              +
-            </button>
-          </div>
           <a
             href={file}
             target="_blank"
@@ -65,8 +34,18 @@ export default function ProposalPdfViewer({ file, title }: Props) {
           </a>
         </div>
       </div>
-      <div className="max-h-[min(85vh,900px)] overflow-auto bg-navy px-2 py-4 sm:px-4">
-        <ProposalPdfDocument file={file} scale={scale} />
+      <div className="bg-[#0a0f18] p-2 sm:p-3">
+        <div className="relative h-[min(85vh,900px)] w-full overflow-hidden rounded-lg border border-white/10 bg-navy">
+          <iframe
+            src={`${file}#toolbar=1&navpanes=0`}
+            title={title}
+            className="absolute inset-0 h-full w-full bg-navy"
+          />
+        </div>
+        <p className="muted-text mt-3 text-center text-[11px]">
+          Use your browser&apos;s PDF controls to zoom and search. Safari and Chrome
+          both support inline PDF.
+        </p>
       </div>
     </div>
   );

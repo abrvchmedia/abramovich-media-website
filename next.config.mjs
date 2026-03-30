@@ -3,12 +3,25 @@ const nextConfig = {
   images: {
     domains: ["img.youtube.com"],
   },
-  webpack: (config) => {
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      canvas: false,
-    };
-    return config;
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "abramovichmedia.com",
+          },
+        ],
+        destination: "https://www.abramovichmedia.com/:path*",
+        permanent: true,
+      },
+      {
+        source: "/proposals/uncoverresearch",
+        destination: "/proposals/UncoverResearch",
+        permanent: false,
+      },
+    ];
   },
 };
 
