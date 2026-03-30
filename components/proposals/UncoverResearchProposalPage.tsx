@@ -5,7 +5,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ProposalPdfViewer from "@/components/proposals/ProposalPdfViewer";
 
-const PDF_PATH = "/proposals/uncover-research-field-capture.pdf";
+const PROPOSAL_PDF = "/proposals/uncover-research-field-capture.pdf";
+const W9_PDF = "/proposals/jonathan-abramovich-w9.pdf";
 
 const fadeUp = {
   initial: { opacity: 0, y: 28 },
@@ -39,54 +40,38 @@ export default function UncoverResearchProposalPage() {
             className="space-y-6 mb-14"
           >
             <p className="body-text text-[1.05rem] leading-[1.85] text-gray-100">
-              You did not get a rate card—you got a{" "}
-              <strong className="text-white font-semibold">named outcome</strong>{" "}
-              with a clear finish line, because that is how{" "}
-              <strong className="text-accent font-semibold">authority is earned</strong>{" "}
-              before money changes hands: the same{" "}
-              <em className="text-gray-200 not-italic">audit-first</em> posture we use
-              when we crawl what the market can actually see—evidence on the page, no
-              invented metrics—is how premium buyers decide they can trust you with{" "}
-              <strong className="text-white font-semibold">
-                affluent participants
-              </strong>{" "}
-              and a <strong className="text-white font-semibold">Rothy&apos;s</strong>
-              -tier brand moment. Robert Cialdini&apos;s work on{" "}
-              <strong className="text-white font-semibold">reciprocity</strong> is not a
-              gimmick here; when someone hands you real diagnostic structure before you
-              pay, the natural response is to match that seriousness—and his research on{" "}
-              <strong className="text-white font-semibold">
-                commitment and consistency
-              </strong>{" "}
-              shows that a decisive first yes—scoped deposit and executed terms—is what
-              turns intent into <strong className="text-white font-semibold">locked</strong>{" "}
-              calendar reality instead of another polite thread that never commits.
+              Thank you for the opportunity to shoot video for these day shoots. This
+              study sits exactly where I like to work: real homes, real wardrobes, and a
+              dinner environment where the room still has to feel elevated—without ever
+              making participants perform for the camera. My default is to protect the
+              integrity of the conversation while building a{" "}
+              <strong className="text-white font-semibold">visual library</strong> your
+              editors can actually cut with: clean audio, consistent exposure, and
+              detail in the product and environment that reads on a big screen—not just
+              on a phone.
             </p>
             <p className="body-text text-[1.05rem] leading-[1.85] text-gray-100">
-              <strong className="text-accent font-semibold">ClickFunnels</strong>-grade
-              offer architecture means{" "}
-              <strong className="text-white font-semibold">one dominant decision</strong>{" "}
-              with friction stripped out: choose the tier that matches how much{" "}
-              <strong className="text-white font-semibold">certainty</strong> you want on
-              ingest and verification, then move—because{" "}
-              <strong className="text-white font-semibold">time delay</strong> and{" "}
-              <strong className="text-white font-semibold">effort</strong> are the silent
-              killers of closed deals (the same{" "}
-              <em className="text-gray-200 not-italic">value equation</em> logic Hormozi
-              hammers: widen perceived outcome, raise likelihood, shrink delay and
-              sacrifice). Our{" "}
-              <strong className="text-white font-semibold">Authority Engine</strong>{" "}
-              follow-up standard rejects hollow &quot;just checking in&quot;; we run{" "}
-              <strong className="text-white font-semibold">certainty transfer</strong>—
-              forward motion that answers what blocks the next step. Scroll the embedded
-              proposal, <strong className="text-white font-semibold">download</strong> it
-              for accounting if you need, then{" "}
-              <strong className="text-cta font-semibold">reply with your tier</strong>:
-              the moment you do, ambiguity converts into{" "}
-              <strong className="text-white font-semibold">Scottsdale dates held</strong>,
-              gear allocated, and{" "}
-              <strong className="text-white font-semibold">editor-ready masters</strong>—
-              without rebuilding the brief from zero.
+              Most of my recent depth is in{" "}
+              <strong className="text-accent font-semibold">
+                branded fashion and lifestyle
+              </strong>
+              ,{" "}
+              <strong className="text-white font-semibold">
+                live and staged events
+              </strong>
+              , and the kind of{" "}
+              <strong className="text-white font-semibold">
+                cinematic B-roll
+              </strong>{" "}
+              that has to sell texture, silhouette, and context in a few seconds. That
+              maps cleanly to closets, pairs on shelves, and the small rituals of how
+              someone gets dressed—without turning the shoot into a fashion campaign that
+              fights the research. Below is the formal scope and structure; I&apos;m
+              doing a last pass on the{" "}
+              <strong className="text-white font-semibold">numbers in the official PDF</strong>{" "}
+              before it goes to your team for signature, so what you download may reflect
+              the final investment. If anything needs to move to match procurement or
+              timeline, reply with constraints and I&apos;ll turn around a tight revision.
             </p>
           </motion.div>
 
@@ -96,8 +81,10 @@ export default function UncoverResearchProposalPage() {
             transition={{ duration: 0.65, delay: 0.2, ease: "easeOut" }}
           >
             <ProposalPdfViewer
-              file={PDF_PATH}
+              file={PROPOSAL_PDF}
               title="Uncover Research — Field capture (Scottsdale)"
+              w9File={W9_PDF}
+              w9Label="W-9"
             />
           </motion.div>
 
