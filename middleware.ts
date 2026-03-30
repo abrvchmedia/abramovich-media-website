@@ -3,6 +3,16 @@ import { verifyToken } from "@/backend/middleware/auth";
 
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+
+  // next.config `redirects` match sources case-insensitively, so a lowercase→mixed-case
+  // rule loops forever on /proposals/UncoverResearch. Only exact lowercase here.
+  if (pathname === "/proposals/uncoverresearch") {
+    return NextResponse.redirect(
+      new URL("/proposals/UncoverResearch", request.url),
+      308
+    );
+  }
+
   const token = request.cookies.get("admin_token")?.value;
 
   const isLoginPage = pathname === "/admin/login";
@@ -53,5 +63,9 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/admin/:path*", "/api/admin/:path*"],
+  matcher: [
+    "/proposals/uncoverresearch",
+    "/admin/:path*",
+    "/api/admin/:path*",
+  ],
 };
