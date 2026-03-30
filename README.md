@@ -39,4 +39,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 - **Uncover Research:** [`/proposals/UncoverResearch`](https://www.abramovichmedia.com/proposals/UncoverResearch) — not linked in the main nav; `noindex` + disallowed in `robots.txt`. Replace `public/proposals/uncover-research-field-capture.pdf` and `public/proposals/jonathan-abramovich-w9.pdf` when you refresh files.
 - PDF is shown with a native **iframe** embed (reliable on Vercel). `/proposals/uncoverresearch` redirects to the canonical casing.
-- **Use `https://www.abramovichmedia.com`** for the live site; apex `abramovichmedia.com` redirects to `www` when DNS points at this Vercel project (add both domains in Vercel → Domains).
+- **Use `https://www.abramovichmedia.com`** for the live site. Set apex ↔ `www` **only** in Vercel → Domains (do not duplicate host redirects in `next.config` or Safari may loop).

@@ -5,17 +5,8 @@ const nextConfig = {
   },
   async redirects() {
     return [
-      {
-        source: "/:path*",
-        has: [
-          {
-            type: "host",
-            value: "abramovichmedia.com",
-          },
-        ],
-        destination: "https://www.abramovichmedia.com/:path*",
-        permanent: true,
-      },
+      // Do not add apex→www redirects here — Vercel "Domains" already handles www/apex.
+      // A duplicate host redirect in Next + Vercel's redirect causes infinite loops in Safari.
       {
         source: "/proposals/uncoverresearch",
         destination: "/proposals/UncoverResearch",
