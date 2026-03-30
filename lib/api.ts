@@ -100,4 +100,43 @@ export const admin = {
     }),
   deletePost: (id: string) =>
     fetchAPI(`/api/admin/posts/${id}`, { method: "DELETE" }),
+
+  // Pipeline (MCP / outreach tracker)
+  getPipeline: (params?: Record<string, string>) => {
+    const q = new URLSearchParams(params || {});
+    const qs = q.toString();
+    return fetchAPI(`/api/admin/pipeline${qs ? `?${qs}` : ""}`);
+  },
+  createPipelineLead: (data: Record<string, unknown>) =>
+    fetchAPI("/api/admin/pipeline", {
+      method: "POST",
+      body: JSON.stringify(data),
+    }),
+  updatePipelineLead: (id: string, data: Record<string, unknown>) =>
+    fetchAPI(`/api/admin/pipeline/${id}`, {
+      method: "PATCH",
+      body: JSON.stringify(data),
+    }),
+  deletePipelineLead: (id: string) =>
+    fetchAPI(`/api/admin/pipeline/${id}`, { method: "DELETE" }),
+  importPipelineRunLog: (body: {
+    raw: Record<string, unknown>;
+    title?: string;
+    batchRunId?: string;
+  }) =>
+    fetchAPI("/api/admin/pipeline/import-run-log", {
+      method: "POST",
+      body: JSON.stringify(body),
+    }),
+  importPipelineRows: (rows: Record<string, unknown>[]) =>
+    fetchAPI("/api/admin/pipeline/import-rows", {
+      method: "POST",
+      body: JSON.stringify({ rows }),
+    }),
+  getPipelineSnapshots: () => fetchAPI("/api/admin/pipeline/snapshots"),
+  createPipelineSnapshot: (data: Record<string, unknown>) =>
+    fetchAPI("/api/admin/pipeline/snapshots", {
+      method: "POST",
+      body: JSON.stringify(data),
+    }),
 };

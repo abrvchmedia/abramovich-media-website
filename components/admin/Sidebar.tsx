@@ -6,6 +6,7 @@ import { admin } from "@/lib/api";
 
 const navItems = [
   { href: "/admin", label: "Dashboard", icon: "◫" },
+  { href: "/admin/pipeline", label: "Pipeline", icon: "◈" },
   { href: "/admin/pages", label: "Pages", icon: "☰" },
   { href: "/admin/posts", label: "Posts", icon: "✎" },
 ];
@@ -35,7 +36,7 @@ export default function Sidebar() {
           const isActive =
             item.href === "/admin"
               ? pathname === "/admin"
-              : pathname.startsWith(item.href);
+              : pathname === item.href || pathname.startsWith(item.href + "/");
 
           return (
             <Link

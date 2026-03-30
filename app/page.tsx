@@ -5,6 +5,7 @@ import AuthorityPositioning from "@/components/AuthorityPositioning";
 import Portfolio from "@/components/Portfolio";
 import CoreOffers from "@/components/CoreOffers";
 import AuditSection from "@/components/AuditSection";
+import PipelineRunningTotals from "@/components/PipelineRunningTotals";
 import Blog from "@/components/Blog";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -47,6 +48,7 @@ export default async function Home() {
       <AuthorityPositioning />
       <Portfolio />
       <CoreOffers />
+      <PipelineRunningTotals />
       <AuditSection />
       <Blog posts={serialized} />
       <Contact />

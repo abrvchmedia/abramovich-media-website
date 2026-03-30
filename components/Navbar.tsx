@@ -4,10 +4,10 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "Portfolio", href: "#portfolio" },
+  { label: "Home", href: "/" },
+  { label: "Portfolio", href: "/#portfolio" },
   { label: "Blog", href: "/blog" },
-  { label: "Contact", href: "#contact" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export default function Navbar() {
@@ -33,7 +33,7 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16 md:h-20">
         {/* Logo */}
-        <a href="#home" className="flex items-center">
+        <a href="/" className="flex items-center">
           <span className="text-accent font-black text-lg md:text-xl uppercase tracking-[0.05em]">
             Abramovich Media
           </span>
@@ -56,7 +56,7 @@ export default function Navbar() {
             </li>
           ))}
           <li>
-            <a href="#audit" className="btn-cta py-2.5 px-6 text-xs">
+            <a href="/#audit" className="btn-cta py-2.5 px-6 text-xs">
               Authority Audit
             </a>
           </li>
@@ -105,7 +105,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#audit"
+            href="/#audit"
             onClick={() => setMenuOpen(false)}
             className="btn-cta w-full text-center text-xs py-3"
           >

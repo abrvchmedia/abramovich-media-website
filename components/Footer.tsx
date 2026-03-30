@@ -1,8 +1,8 @@
 const footerLinks = [
-  { label: "Home", href: "#home" },
-  { label: "Portfolio", href: "#portfolio" },
-  { label: "Blog", href: "#blog" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "Portfolio", href: "/#portfolio" },
+  { label: "Blog", href: "/blog" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export default function Footer() {

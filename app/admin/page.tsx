@@ -79,7 +79,13 @@ export default function AdminDashboard() {
       </div>
 
       {/* Quick Actions */}
-      <div className="flex gap-3 mb-8">
+      <div className="flex flex-wrap gap-3 mb-8">
+        <Link
+          href="/admin/pipeline"
+          className="bg-secondary/20 text-secondary font-semibold px-4 py-2.5 rounded-lg text-sm hover:bg-secondary/30 transition-colors border border-secondary/30"
+        >
+          Pipeline tracker
+        </Link>
         <Link
           href="/admin/pages/new"
           className="bg-accent text-navy font-semibold px-4 py-2.5 rounded-lg text-sm hover:bg-accent/90 transition-colors"
