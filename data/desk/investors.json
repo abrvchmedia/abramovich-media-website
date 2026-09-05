@@ -1,0 +1,1643 @@
+[
+  {
+    "kind": "investor",
+    "name": "Cinetic Media",
+    "organization": "Cinetic Media",
+    "ticker": "CNET",
+    "subtype": "SALES",
+    "city": "New York",
+    "website": "https://www.cineticmedia.com",
+    "thesis": "Advisory, packaging, and sales \u2014 the people who know which buyer is actually in the market this week. Not a principal check.",
+    "approach": "High-value intro desk for MARINA\u2019s festival/feature pathway and for any picture that needs a North American buyer map.",
+    "aum": "Advisory / sales",
+    "ticketMin": 200000,
+    "ticketMax": 20000000,
+    "genres": [
+      "Drama",
+      "Festival",
+      "Documentary",
+      "Prestige",
+      "Character"
+    ],
+    "stages": [
+      "Development",
+      "Completed",
+      "Sales"
+    ],
+    "geos": [
+      "US"
+    ],
+    "taxCredits": [
+      "NY",
+      "GA"
+    ],
+    "markets": [
+      "Sundance",
+      "TIFF",
+      "Cannes",
+      "AFM"
+    ],
+    "notable": [
+      "Independent film advisory"
+    ],
+    "warmth": 80,
+    "status": "ACTIVE",
+    "lastPrint": "Advisory \u00b7 buyer map",
+    "photo": "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "BondIt Media Capital",
+    "organization": "BondIt Media Capital",
+    "ticker": "BNDT",
+    "subtype": "GAP",
+    "city": "Santa Monica",
+    "website": "https://www.bonditmedia.com",
+    "thesis": "Gap, bridge, and tax-credit loans against pre-sales, hard collateral, and rebate paper. They price risk. Soft attachments without a sales agent will get a pass.",
+    "approach": "Bring a sales grid, credit paperwork, and a completion-bond path. This is a credit meeting, not a creative pitch.",
+    "aum": "Gap / bridge book",
+    "ticketMin": 250000,
+    "ticketMax": 5000000,
+    "genres": [
+      "Thriller",
+      "Horror",
+      "Action",
+      "Crime",
+      "Drama"
+    ],
+    "stages": [
+      "Pre-production",
+      "Production"
+    ],
+    "geos": [
+      "US",
+      "UK",
+      "CA"
+    ],
+    "taxCredits": [
+      "GA",
+      "NM",
+      "NV",
+      "LA",
+      "UK",
+      "ON"
+    ],
+    "markets": [
+      "AFM",
+      "EFM",
+      "Cannes"
+    ],
+    "notable": [
+      "Volume gap lender across AFM slates"
+    ],
+    "warmth": 82,
+    "status": "ACTIVE",
+    "lastPrint": "Gap vs pre-sales + rebate",
+    "photo": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "Film Finances, Inc.",
+    "organization": "Film Finances, Inc.",
+    "ticker": "FFIS",
+    "subtype": "BOND",
+    "city": "Los Angeles / London",
+    "website": "https://www.ffi.com",
+    "thesis": "Not an equity investor. The completion bond is what lets banks, gap, and tax-credit lenders close. No bond, no senior stack on a real budget.",
+    "approach": "Put them on the FLOAT TELLER and larger-title checklists before you shop gap. Bond application = budget, schedule, chain of title, key-man.",
+    "aum": "Completion guarantees",
+    "ticketMin": 500000,
+    "ticketMax": 100000000,
+    "genres": [
+      "All"
+    ],
+    "stages": [
+      "Pre-production",
+      "Production"
+    ],
+    "geos": [
+      "US",
+      "UK",
+      "World"
+    ],
+    "taxCredits": [
+      "GA",
+      "NM",
+      "NV",
+      "UK",
+      "CA"
+    ],
+    "markets": [
+      "AFM",
+      "Cannes"
+    ],
+    "notable": [
+      "Industry-standard completion guarantor"
+    ],
+    "warmth": 88,
+    "status": "ACTIVE",
+    "lastPrint": "Completion bond (enables the stack)",
+    "photo": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "Highland Film Group",
+    "organization": "Highland Film Group",
+    "ticker": "HLND",
+    "subtype": "SALES",
+    "city": "Los Angeles",
+    "website": "https://www.highlandfilmgroup.com",
+    "thesis": "International sales with minimum guarantees that can be banked. Genre and star-driven travel best. A short with a feature pathway is a market conversation, not an MG.",
+    "approach": "AFM November is the live window for MARINA sales-readiness and FLOAT TELLER pre-sales lane. Go with a one-sheet, comps, and who controls rights.",
+    "aum": "Sales + MG / pre-sale",
+    "ticketMin": 500000,
+    "ticketMax": 15000000,
+    "genres": [
+      "Action",
+      "Thriller",
+      "Horror",
+      "Crime",
+      "Drama"
+    ],
+    "stages": [
+      "Pre-production",
+      "Production",
+      "Completed"
+    ],
+    "geos": [
+      "US",
+      "World"
+    ],
+    "taxCredits": [
+      "GA",
+      "NM",
+      "NV"
+    ],
+    "markets": [
+      "AFM",
+      "Cannes",
+      "EFM",
+      "TIFF"
+    ],
+    "notable": [
+      "AFM / Cannes regulars"
+    ],
+    "warmth": 79,
+    "status": "ACTIVE",
+    "lastPrint": "AFM pre-sale grid",
+    "photo": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "Aperture Media Partners",
+    "organization": "Aperture Media Partners",
+    "ticker": "APTR",
+    "subtype": "DEBT",
+    "city": "Los Angeles",
+    "website": "https://www.aperturemediapartners.com",
+    "thesis": "Production lending against contracts, tax credits, and bonded pictures. They need paper, not passion.",
+    "approach": "Once MARINA or FLOAT TELLER has a sales contract or monetizable NV credit, this is a live desk. Before that, it is premature.",
+    "aum": "Senior / mezz film debt",
+    "ticketMin": 500000,
+    "ticketMax": 15000000,
+    "genres": [
+      "All"
+    ],
+    "stages": [
+      "Pre-production",
+      "Production"
+    ],
+    "geos": [
+      "US"
+    ],
+    "taxCredits": [
+      "GA",
+      "NM",
+      "NY",
+      "NV",
+      "LA"
+    ],
+    "markets": [
+      "AFM"
+    ],
+    "notable": [
+      "Independent production lending"
+    ],
+    "warmth": 73,
+    "status": "ACTIVE",
+    "lastPrint": "Senior vs contracts + credits",
+    "photo": "https://images.unsplash.com/photo-1541354329998-f4d9aabf6c8f?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "ARRAY",
+    "organization": "ARRAY",
+    "ticker": "ARRY",
+    "subtype": "FUND",
+    "city": "Los Angeles",
+    "website": "https://www.arraynow.com",
+    "thesis": "Amplifies filmmakers of color and women directors. Distribution and production with a mission, not a generic gap shop.",
+    "approach": "Possible MARINA / culturally specific feature-pathway conversation if the filmmaker fit is honest.",
+    "aum": "Ava DuVernay / distribution + production",
+    "ticketMin": 250000,
+    "ticketMax": 8000000,
+    "genres": [
+      "Drama",
+      "Documentary",
+      "Character",
+      "Festival",
+      "Latine"
+    ],
+    "stages": [
+      "Development",
+      "Production",
+      "Completed"
+    ],
+    "geos": [
+      "US"
+    ],
+    "taxCredits": [
+      "GA",
+      "CA",
+      "NY"
+    ],
+    "markets": [
+      "Sundance",
+      "TIFF"
+    ],
+    "notable": [
+      "Origin",
+      "ARRAY Releasing"
+    ],
+    "warmth": 66,
+    "status": "SELECTIVE",
+    "lastPrint": "Mission distribution + production",
+    "photo": "https://images.unsplash.com/photo-1524985069026-dd778a62d4f0?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "XYZ Films",
+    "organization": "XYZ Films",
+    "ticker": "XYZF",
+    "subtype": "SALES",
+    "city": "Los Angeles",
+    "website": "https://www.xyzfilms.com",
+    "thesis": "Genre-forward sales and production. Thriller, action, horror with a distinct filmmaker. Fast AFM conversation if the tone is sharp.",
+    "approach": "Strong FLOAT TELLER / thriller-adjacent call. Weak for a quiet character short unless the feature pathway is genre.",
+    "aum": "Genre sales / production",
+    "ticketMin": 300000,
+    "ticketMax": 8000000,
+    "genres": [
+      "Thriller",
+      "Horror",
+      "Action",
+      "Crime"
+    ],
+    "stages": [
+      "Development",
+      "Pre-production",
+      "Production"
+    ],
+    "geos": [
+      "US",
+      "World"
+    ],
+    "taxCredits": [
+      "NM",
+      "GA",
+      "NV"
+    ],
+    "markets": [
+      "AFM",
+      "Cannes",
+      "Sitges"
+    ],
+    "notable": [
+      "The Raid",
+      "Brawl in Cell Block 99"
+    ],
+    "warmth": 75,
+    "status": "ACTIVE",
+    "lastPrint": "Genre sales",
+    "photo": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "Great Point Media",
+    "organization": "Great Point Media",
+    "ticker": "GPNT",
+    "subtype": "FUND",
+    "city": "London",
+    "website": "https://www.greatpointmedia.com",
+    "thesis": "UK independent film and high-end TV. Prefers packages with a broadcaster or streamer conversation already in motion.",
+    "approach": "Useful if FLOAT TELLER or a feature pathway can show a UK/EU sales or co-pro angle.",
+    "aum": "TV & film equity",
+    "ticketMin": 500000,
+    "ticketMax": 10000000,
+    "genres": [
+      "Drama",
+      "Thriller",
+      "TV",
+      "Prestige"
+    ],
+    "stages": [
+      "Development",
+      "Pre-production",
+      "Production"
+    ],
+    "geos": [
+      "UK",
+      "EU"
+    ],
+    "taxCredits": [
+      "UK"
+    ],
+    "markets": [
+      "London",
+      "MIPTV",
+      "Cannes"
+    ],
+    "notable": [
+      "UK independent slate"
+    ],
+    "warmth": 58,
+    "status": "ACTIVE",
+    "lastPrint": "UK indie equity",
+    "photo": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "Productivity Media",
+    "organization": "Productivity Media",
+    "ticker": "PRDM",
+    "subtype": "FUND",
+    "city": "Ontario",
+    "website": "https://www.productivitymedia.com",
+    "thesis": "Canadian independent film equity that expects a real Canadian production. Similar logic to BRON at a smaller check.",
+    "approach": "Only with a Canadian co-pro. Flag if a title can move north for the stack.",
+    "aum": "Canadian independent",
+    "ticketMin": 500000,
+    "ticketMax": 8000000,
+    "genres": [
+      "Drama",
+      "Thriller",
+      "Horror",
+      "Festival"
+    ],
+    "stages": [
+      "Pre-production",
+      "Production"
+    ],
+    "geos": [
+      "CA",
+      "US"
+    ],
+    "taxCredits": [
+      "ON",
+      "BC",
+      "QC"
+    ],
+    "markets": [
+      "TIFF",
+      "AFM"
+    ],
+    "notable": [
+      "Canadian indie slate"
+    ],
+    "warmth": 60,
+    "status": "ACTIVE",
+    "lastPrint": "CA independent equity",
+    "photo": "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "Head Gear Films",
+    "organization": "Head Gear Films",
+    "ticker": "HDGR",
+    "subtype": "GAP",
+    "city": "London",
+    "website": "https://www.headgearfilms.com",
+    "thesis": "Gap finance against remaining unsold territories and tax credits. Fast AFM/EFM shop. They will ask who the collection account manager is.",
+    "approach": "Bring a recoupment waterfall. This desk speaks waterfall, not logline.",
+    "aum": "UK / EU gap",
+    "ticketMin": 200000,
+    "ticketMax": 4000000,
+    "genres": [
+      "Thriller",
+      "Horror",
+      "Drama",
+      "Action"
+    ],
+    "stages": [
+      "Pre-production",
+      "Production"
+    ],
+    "geos": [
+      "UK",
+      "EU",
+      "US"
+    ],
+    "taxCredits": [
+      "UK",
+      "IE",
+      "EU"
+    ],
+    "markets": [
+      "AFM",
+      "EFM",
+      "Cannes",
+      "London"
+    ],
+    "notable": [
+      "European gap regular"
+    ],
+    "warmth": 77,
+    "status": "ACTIVE",
+    "lastPrint": "Gap vs unsold territories",
+    "photo": "https://images.unsplash.com/photo-1521296797187-726205347ca0?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "Black Bear Pictures",
+    "organization": "Black Bear Pictures",
+    "ticker": "BLKB",
+    "subtype": "FUND",
+    "city": "Los Angeles",
+    "website": "https://www.blackbearpictures.com",
+    "thesis": "Prestige and commercial independent features with real directors and a festival/specialty path. Equity plus packaging, not a passive check.",
+    "approach": "Submit through counsel or a known producer with a clean title memo, budget, and sales estimates. AFM is a real window.",
+    "aum": "Active picture fund",
+    "ticketMin": 2000000,
+    "ticketMax": 25000000,
+    "genres": [
+      "Drama",
+      "Thriller",
+      "Comedy",
+      "Prestige",
+      "Festival"
+    ],
+    "stages": [
+      "Development",
+      "Pre-production",
+      "Production"
+    ],
+    "geos": [
+      "US",
+      "UK"
+    ],
+    "taxCredits": [
+      "GA",
+      "NM",
+      "NY",
+      "UK"
+    ],
+    "markets": [
+      "Sundance",
+      "Cannes",
+      "TIFF",
+      "AFM"
+    ],
+    "notable": [
+      "The Imitation Game",
+      "The Big Short",
+      "Immaculate"
+    ],
+    "warmth": 74,
+    "status": "ACTIVE",
+    "lastPrint": "Specialty equity \u00b7 mid-budget",
+    "photo": "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "MACRO",
+    "organization": "MACRO",
+    "ticker": "MACR",
+    "subtype": "FUND",
+    "city": "Los Angeles",
+    "website": "https://www.macro.studio",
+    "thesis": "Charles D. King\u2019s company. Stories from Black and underrepresented creators with real cultural voltage \u2014 not \u2018diversity as a checkbox\u2019 on a generic thriller.",
+    "approach": "Relationship intro. Lead with the filmmaker and why this story has to exist \u2014 then the money.",
+    "aum": "Culture-defining film/TV",
+    "ticketMin": 1000000,
+    "ticketMax": 20000000,
+    "genres": [
+      "Drama",
+      "Comedy",
+      "Prestige",
+      "Character",
+      "Latine"
+    ],
+    "stages": [
+      "Development",
+      "Pre-production",
+      "Production"
+    ],
+    "geos": [
+      "US"
+    ],
+    "taxCredits": [
+      "GA",
+      "NM",
+      "CA",
+      "NY"
+    ],
+    "markets": [
+      "Sundance",
+      "TIFF",
+      "Cannes"
+    ],
+    "notable": [
+      "Mudbound",
+      "Judas and the Black Messiah",
+      "Raising Dion"
+    ],
+    "warmth": 70,
+    "status": "SELECTIVE",
+    "lastPrint": "Culture-first equity",
+    "photo": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "Voltage Pictures",
+    "organization": "Voltage Pictures",
+    "ticker": "VOLT",
+    "subtype": "SALES",
+    "city": "Los Angeles",
+    "website": "https://www.voltagepictures.com",
+    "thesis": "Sales company that can also structure finance against territory. Stronger when there is a director, a cast element, and a genre the foreign buyers already understand.",
+    "approach": "Market intro with a territory map. Do not lead with \u2018we need equity\u2019 \u2014 lead with what is sellable.",
+    "aum": "Sales / finance",
+    "ticketMin": 1000000,
+    "ticketMax": 30000000,
+    "genres": [
+      "Thriller",
+      "Action",
+      "Drama",
+      "War",
+      "Crime"
+    ],
+    "stages": [
+      "Development",
+      "Pre-production",
+      "Production"
+    ],
+    "geos": [
+      "US",
+      "World"
+    ],
+    "taxCredits": [
+      "GA",
+      "UK",
+      "CA"
+    ],
+    "markets": [
+      "AFM",
+      "Cannes",
+      "EFM"
+    ],
+    "notable": [
+      "The Hurt Locker",
+      "Dallas Buyers Club"
+    ],
+    "warmth": 68,
+    "status": "SELECTIVE",
+    "lastPrint": "Territory MG + equity hole",
+    "photo": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "East West Bank \u2014 Entertainment",
+    "organization": "East West Bank \u2014 Entertainment",
+    "ticker": "EWBC",
+    "subtype": "DEBT",
+    "city": "Pasadena / Los Angeles",
+    "website": "https://www.eastwestbank.com",
+    "thesis": "Active entertainment lender, often more reachable than the bulge banks for independent pictures with real collateral.",
+    "approach": "Good second call after a bond path exists. Bring the credit assignment documents.",
+    "aum": "Entertainment lending",
+    "ticketMin": 1000000,
+    "ticketMax": 40000000,
+    "genres": [
+      "All"
+    ],
+    "stages": [
+      "Production"
+    ],
+    "geos": [
+      "US"
+    ],
+    "taxCredits": [
+      "CA",
+      "GA",
+      "NM",
+      "NV"
+    ],
+    "markets": [
+      "AFM"
+    ],
+    "notable": [
+      "Independent film banking"
+    ],
+    "warmth": 64,
+    "status": "ACTIVE",
+    "lastPrint": "Indie production line",
+    "photo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "City National Bank \u2014 Entertainment",
+    "organization": "City National Bank \u2014 Entertainment",
+    "ticker": "CNBE",
+    "subtype": "DEBT",
+    "city": "Beverly Hills",
+    "website": "https://www.cnb.com",
+    "thesis": "The classic entertainment bank. Prints against distribution contracts, tax credits, and bonded productions. Relationship + paper.",
+    "approach": "Need a producer with a banking history or a guarantor. First-feature unbanked packages will bounce. Build the file first.",
+    "aum": "Entertainment commercial bank",
+    "ticketMin": 2000000,
+    "ticketMax": 75000000,
+    "genres": [
+      "All"
+    ],
+    "stages": [
+      "Production",
+      "P&A"
+    ],
+    "geos": [
+      "US"
+    ],
+    "taxCredits": [
+      "GA",
+      "NM",
+      "NY",
+      "NV",
+      "CA"
+    ],
+    "markets": [
+      "AFM"
+    ],
+    "notable": [
+      "Hollywood commercial bank of record"
+    ],
+    "warmth": 50,
+    "status": "SELECTIVE",
+    "lastPrint": "Contract discounting",
+    "photo": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "CAA Media Finance",
+    "organization": "CAA Media Finance",
+    "ticker": "CAAM",
+    "subtype": "SALES",
+    "city": "Los Angeles",
+    "website": "https://www.caa.com",
+    "thesis": "Packaging and finance introductions inside CAA. They do not replace your lawyer. They amplify a package that already has title, a filmmaker, and a budget.",
+    "approach": "Use when there is a CAA-adjacent element or a package worth putting in front of their finance group. AM is not a talent agent \u2014 this is a capital intro, papered.",
+    "aum": "Agency finance group",
+    "ticketMin": 2000000,
+    "ticketMax": 50000000,
+    "genres": [
+      "Drama",
+      "Thriller",
+      "Comedy",
+      "Prestige",
+      "Franchise"
+    ],
+    "stages": [
+      "Development",
+      "Pre-production"
+    ],
+    "geos": [
+      "US"
+    ],
+    "taxCredits": [
+      "GA",
+      "NM",
+      "UK"
+    ],
+    "markets": [
+      "Cannes",
+      "AFM",
+      "EFM"
+    ],
+    "notable": [
+      "Agency finance desk"
+    ],
+    "warmth": 52,
+    "status": "SELECTIVE",
+    "lastPrint": "Packaging / finance intro",
+    "photo": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "BRON Studios",
+    "organization": "BRON Studios",
+    "ticker": "BRON",
+    "subtype": "FUND",
+    "city": "Vancouver / Los Angeles",
+    "website": "https://bronstudios.com",
+    "thesis": "Canadian and US pictures that can actually use federal/provincial credits. Will produce and co-finance. Location is part of the money.",
+    "approach": "Open with where it shoots and why the Canadian stack is real. A Nevada-only plan is the wrong first sentence.",
+    "aum": "Production + tax-credit equity",
+    "ticketMin": 3000000,
+    "ticketMax": 50000000,
+    "genres": [
+      "Drama",
+      "Thriller",
+      "Prestige",
+      "Awards"
+    ],
+    "stages": [
+      "Development",
+      "Pre-production",
+      "Production"
+    ],
+    "geos": [
+      "CA",
+      "US"
+    ],
+    "taxCredits": [
+      "BC",
+      "ON",
+      "QC",
+      "GA"
+    ],
+    "markets": [
+      "TIFF",
+      "Cannes",
+      "AFM"
+    ],
+    "notable": [
+      "Juno",
+      "The Mule",
+      "Bombshell"
+    ],
+    "warmth": 61,
+    "status": "ACTIVE",
+    "lastPrint": "CA credit + co-finance",
+    "photo": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "Sierra / Affinity",
+    "organization": "Sierra / Affinity",
+    "ticker": "SRRA",
+    "subtype": "SALES",
+    "city": "Los Angeles",
+    "website": "https://www.sierra-affinity.com",
+    "thesis": "High-end international sales. Bigger packages, real directors, bankable cast. Pre-sales that senior lenders will actually discount.",
+    "approach": "Locked / Dante band more than MARINA. Intro only with a serious package.",
+    "aum": "International sales",
+    "ticketMin": 2000000,
+    "ticketMax": 40000000,
+    "genres": [
+      "Thriller",
+      "Action",
+      "Drama",
+      "Prestige"
+    ],
+    "stages": [
+      "Pre-production",
+      "Production"
+    ],
+    "geos": [
+      "US",
+      "World"
+    ],
+    "taxCredits": [
+      "UK",
+      "GA",
+      "CA"
+    ],
+    "markets": [
+      "Cannes",
+      "AFM",
+      "EFM"
+    ],
+    "notable": [
+      "Premium international sales"
+    ],
+    "warmth": 49,
+    "status": "SELECTIVE",
+    "lastPrint": "Premium territory sales",
+    "photo": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "Participant",
+    "organization": "Participant",
+    "ticker": "PTCP",
+    "subtype": "FAMILY",
+    "city": "Los Angeles",
+    "website": "https://www.participant.com",
+    "thesis": "Jeff Skoll\u2019s impact banner. Social-issue documentary and narrative with a campaign, not just a marketplace genre play.",
+    "approach": "Only if there is a genuine impact thesis. Do not force MARINA or a crime feature into this box.",
+    "aum": "Impact film (Skoll)",
+    "ticketMin": 2000000,
+    "ticketMax": 40000000,
+    "genres": [
+      "Documentary",
+      "Drama",
+      "Impact",
+      "Prestige"
+    ],
+    "stages": [
+      "Development",
+      "Production"
+    ],
+    "geos": [
+      "US",
+      "World"
+    ],
+    "taxCredits": [
+      "CA",
+      "NY",
+      "UK"
+    ],
+    "markets": [
+      "Sundance",
+      "TIFF",
+      "Cannes"
+    ],
+    "notable": [
+      "An Inconvenient Truth",
+      "Spotlight",
+      "Roma"
+    ],
+    "warmth": 35,
+    "status": "SELECTIVE",
+    "lastPrint": "Impact / documentary-narrative",
+    "photo": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "30WEST",
+    "organization": "30WEST",
+    "ticker": "THRW",
+    "subtype": "FUND",
+    "city": "Los Angeles / New York",
+    "website": "https://www.30west.com",
+    "thesis": "Co-finance, premium independent, and awards-path pictures. Will lead or sit alongside a sales company. Wants a path to distribution, not a deck with no comps.",
+    "approach": "Best with a sales estimate package and a lawyer who can talk chain of title in the first meeting.",
+    "aum": "Film & TV equity",
+    "ticketMin": 3000000,
+    "ticketMax": 40000000,
+    "genres": [
+      "Drama",
+      "Thriller",
+      "Prestige",
+      "Literary",
+      "Festival"
+    ],
+    "stages": [
+      "Pre-production",
+      "Production",
+      "P&A"
+    ],
+    "geos": [
+      "US"
+    ],
+    "taxCredits": [
+      "GA",
+      "NY",
+      "NM",
+      "UK"
+    ],
+    "markets": [
+      "Cannes",
+      "TIFF",
+      "AFM",
+      "EFM"
+    ],
+    "notable": [
+      "Moonlight",
+      "Missing",
+      "The Whale"
+    ],
+    "warmth": 71,
+    "status": "ACTIVE",
+    "lastPrint": "Co-finance / specialty",
+    "photo": "https://images.unsplash.com/photo-1440404653325-ab127d49ea17?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "Ingenious Media",
+    "organization": "Ingenious Media",
+    "ticker": "INGN",
+    "subtype": "FUND",
+    "city": "London",
+    "website": "https://www.ingeniousmedia.co.uk",
+    "thesis": "UK film and TV finance built around the cultural test, UK spend, and EIS/tax-advantaged structures. US pictures need a genuine UK production plan.",
+    "approach": "Only if there is a UK co-producer and spend. Do not pitch a pure Nevada short as an Ingenious deal.",
+    "aum": "UK tax-advantaged film",
+    "ticketMin": 1000000,
+    "ticketMax": 30000000,
+    "genres": [
+      "Drama",
+      "Prestige",
+      "Comedy",
+      "Literary"
+    ],
+    "stages": [
+      "Pre-production",
+      "Production"
+    ],
+    "geos": [
+      "UK",
+      "EU",
+      "US"
+    ],
+    "taxCredits": [
+      "UK"
+    ],
+    "markets": [
+      "London",
+      "Cannes",
+      "EFM"
+    ],
+    "notable": [
+      "Long-running UK film slate investor"
+    ],
+    "warmth": 44,
+    "status": "SELECTIVE",
+    "lastPrint": "UK cultural test equity",
+    "photo": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "Fifth Season",
+    "organization": "Fifth Season",
+    "ticker": "FTHS",
+    "subtype": "STUDIO",
+    "city": "Los Angeles / London",
+    "website": "https://www.fifthseason.com",
+    "thesis": "Independent studio and financier with international sales DNA. Features and series with a clear global buyer map.",
+    "approach": "Sales-aware packages. A feature pathway with cast will travel further than a short.",
+    "aum": "Global studio (ex-Endeavor Content)",
+    "ticketMin": 5000000,
+    "ticketMax": 100000000,
+    "genres": [
+      "Drama",
+      "Thriller",
+      "TV",
+      "Prestige"
+    ],
+    "stages": [
+      "Development",
+      "Pre-production",
+      "Production"
+    ],
+    "geos": [
+      "US",
+      "UK",
+      "World"
+    ],
+    "taxCredits": [
+      "UK",
+      "GA",
+      "CA"
+    ],
+    "markets": [
+      "Cannes",
+      "EFM",
+      "AFM",
+      "MIPCOM"
+    ],
+    "notable": [
+      "Former Endeavor Content catalogue"
+    ],
+    "warmth": 55,
+    "status": "ACTIVE",
+    "lastPrint": "Global indie studio",
+    "photo": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "NEON",
+    "organization": "NEON",
+    "ticker": "NEON",
+    "subtype": "STUDIO",
+    "city": "New York",
+    "website": "https://www.neonrated.com",
+    "thesis": "Buyer more than financier. Acquires finished and late-stage festival pictures. P&A and distribution, occasionally production.",
+    "approach": "A destination for a finished MARINA or a festival feature \u2014 not an opening-equity call.",
+    "aum": "Specialty distributor",
+    "ticketMin": 1000000,
+    "ticketMax": 25000000,
+    "genres": [
+      "Drama",
+      "Festival",
+      "Prestige",
+      "Awards",
+      "Thriller"
+    ],
+    "stages": [
+      "Completed",
+      "Production"
+    ],
+    "geos": [
+      "US"
+    ],
+    "taxCredits": [
+      "NY"
+    ],
+    "markets": [
+      "Cannes",
+      "Sundance",
+      "TIFF"
+    ],
+    "notable": [
+      "Parasite",
+      "Anatomy of a Fall"
+    ],
+    "warmth": 42,
+    "status": "SELECTIVE",
+    "lastPrint": "Specialty acquisition",
+    "photo": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "Annapurna Pictures",
+    "organization": "Annapurna Pictures",
+    "ticker": "ANNP",
+    "subtype": "FAMILY",
+    "city": "Los Angeles",
+    "website": "https://www.annapurna.com",
+    "thesis": "Auteur and awards-path features at a real budget. Family-office temperament: highly selective, relationship-driven, not a volume gap shop.",
+    "approach": "Wrong desk for a first short. Right only for a prestige feature with a director they already respect.",
+    "aum": "Megan Ellison / prestige",
+    "ticketMin": 8000000,
+    "ticketMax": 80000000,
+    "genres": [
+      "Drama",
+      "Literary",
+      "Prestige",
+      "Awards"
+    ],
+    "stages": [
+      "Development",
+      "Production"
+    ],
+    "geos": [
+      "US"
+    ],
+    "taxCredits": [
+      "CA",
+      "NY",
+      "UK"
+    ],
+    "markets": [
+      "Cannes",
+      "Venice",
+      "TIFF"
+    ],
+    "notable": [
+      "American Hustle",
+      "Her",
+      "Phantom Thread"
+    ],
+    "warmth": 28,
+    "status": "SELECTIVE",
+    "lastPrint": "Auteur equity",
+    "photo": "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "Cross Creek Pictures",
+    "organization": "Cross Creek Pictures",
+    "ticker": "CRCK",
+    "subtype": "FUND",
+    "city": "Los Angeles",
+    "website": "https://www.crosscreekpictures.com",
+    "thesis": "Theatrical-minded independent and studio-partnered features. Check size is above most shorts and micro-budget features.",
+    "approach": "Only shop if the budget and attachments are in their band. Otherwise you burn the relationship.",
+    "aum": "Feature equity",
+    "ticketMin": 5000000,
+    "ticketMax": 40000000,
+    "genres": [
+      "Drama",
+      "Thriller",
+      "Prestige",
+      "Awards"
+    ],
+    "stages": [
+      "Pre-production",
+      "Production"
+    ],
+    "geos": [
+      "US"
+    ],
+    "taxCredits": [
+      "GA",
+      "UK",
+      "NM"
+    ],
+    "markets": [
+      "Cannes",
+      "TIFF"
+    ],
+    "notable": [
+      "Black Swan",
+      "The Imitation Game"
+    ],
+    "warmth": 48,
+    "status": "SELECTIVE",
+    "lastPrint": "Mid-budget theatrical equity",
+    "photo": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "MRC",
+    "organization": "MRC",
+    "ticker": "MRC",
+    "subtype": "STUDIO",
+    "city": "Los Angeles",
+    "website": "https://www.mrcstudios.com",
+    "thesis": "Film and TV studio with a history of prestige and commercial. Treat as a buyer/co-financer of packaged pictures, not a gap lender.",
+    "approach": "Packaging conversation once title is clean and talent is real. Not a development dump.",
+    "aum": "Studio / TV",
+    "ticketMin": 8000000,
+    "ticketMax": 80000000,
+    "genres": [
+      "Drama",
+      "Thriller",
+      "TV",
+      "Prestige"
+    ],
+    "stages": [
+      "Development",
+      "Production"
+    ],
+    "geos": [
+      "US"
+    ],
+    "taxCredits": [
+      "GA",
+      "CA",
+      "NY"
+    ],
+    "markets": [
+      "Cannes",
+      "TIFF"
+    ],
+    "notable": [
+      "Ted Lasso",
+      "The Twilight Saga (historical)"
+    ],
+    "warmth": 40,
+    "status": "SELECTIVE",
+    "lastPrint": "Studio co-finance",
+    "photo": "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "New Republic Pictures",
+    "organization": "New Republic Pictures",
+    "ticker": "NRPP",
+    "subtype": "FUND",
+    "city": "Los Angeles",
+    "website": "https://www.newrepublicpictures.com",
+    "thesis": "Co-finances studio and large independent pictures. Check sizes sit above most first-cycle producer clients unless a studio is already in.",
+    "approach": "Keep for Locked / Dante if a studio hole opens. Skip for MARINA.",
+    "aum": "Studio co-finance",
+    "ticketMin": 5000000,
+    "ticketMax": 60000000,
+    "genres": [
+      "Drama",
+      "Action",
+      "Thriller",
+      "Prestige"
+    ],
+    "stages": [
+      "Production"
+    ],
+    "geos": [
+      "US"
+    ],
+    "taxCredits": [
+      "GA",
+      "UK",
+      "CA"
+    ],
+    "markets": [
+      "Cannes"
+    ],
+    "notable": [
+      "1917",
+      "The Invisible Man"
+    ],
+    "warmth": 34,
+    "status": "SELECTIVE",
+    "lastPrint": "Studio co-finance",
+    "photo": "https://images.unsplash.com/photo-1440404653325-ab127d49ea17?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "RedBird Capital Partners",
+    "organization": "RedBird Capital Partners",
+    "ticker": "RDBD",
+    "subtype": "PE",
+    "city": "New York",
+    "website": "https://www.redbirdcap.com",
+    "thesis": "Gerry Cardinale\u2019s sports, media, and live-entertainment platforms. They buy companies and slates, not a single short.",
+    "approach": "Do not send a lookbook. A conversation only exists if AM is packing a media platform, library, or sports-adjacent company.",
+    "aum": "$10B+",
+    "ticketMin": 25000000,
+    "ticketMax": 500000000,
+    "genres": [
+      "Sports",
+      "Documentary",
+      "Franchise",
+      "Live"
+    ],
+    "stages": [
+      "Slate",
+      "Acquisition",
+      "Platform"
+    ],
+    "geos": [
+      "US",
+      "UK",
+      "EU"
+    ],
+    "taxCredits": [
+      "NY",
+      "UK"
+    ],
+    "markets": [
+      "Cannes"
+    ],
+    "notable": [
+      "Yankee Global",
+      "SkyBet",
+      "Geneva"
+    ],
+    "warmth": 18,
+    "status": "SELECTIVE",
+    "lastPrint": "Platform PE \u00b7 sports/media",
+    "photo": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "Eldridge Industries",
+    "organization": "Eldridge Industries",
+    "ticker": "ELDG",
+    "subtype": "PE",
+    "city": "Beverly Hills / New York",
+    "website": "https://www.eldridge.com",
+    "thesis": "Media, sports, and entertainment holdings at the company level (including history with MRC / Valence). Single-picture indie equity is not the product.",
+    "approach": "PE coverage only. Keep on the desk as a \u2018who owns the buyer\u2019 map, not a MARINA check.",
+    "aum": "Todd Boehly / diversified",
+    "ticketMin": 20000000,
+    "ticketMax": 400000000,
+    "genres": [
+      "Franchise",
+      "Studio",
+      "Sports"
+    ],
+    "stages": [
+      "Slate",
+      "Acquisition",
+      "Platform"
+    ],
+    "geos": [
+      "US"
+    ],
+    "taxCredits": [
+      "CA",
+      "NY"
+    ],
+    "markets": [
+      "Cannes"
+    ],
+    "notable": [
+      "Dick Clark Productions",
+      "MRC (historical)"
+    ],
+    "warmth": 16,
+    "status": "SELECTIVE",
+    "lastPrint": "HoldCo media PE",
+    "photo": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "Access Industries",
+    "organization": "Access Industries",
+    "ticker": "ACCS",
+    "subtype": "FAMILY",
+    "city": "New York / London",
+    "website": "https://www.accessindustries.com",
+    "thesis": "Len Blavatnik\u2019s industrial and media office (Warner Music, access entertainment). Occasional prestige film at a scale that looks like a studio, not a first-feature fund.",
+    "approach": "Festival / prestige lane only, via existing relationships. Not a cold AFM table.",
+    "aum": "Blavatnik family office",
+    "ticketMin": 15000000,
+    "ticketMax": 300000000,
+    "genres": [
+      "Prestige",
+      "Music",
+      "Literary",
+      "Awards"
+    ],
+    "stages": [
+      "Production",
+      "Slate",
+      "Acquisition"
+    ],
+    "geos": [
+      "US",
+      "UK"
+    ],
+    "taxCredits": [
+      "UK",
+      "NY"
+    ],
+    "markets": [
+      "Cannes",
+      "Venice"
+    ],
+    "notable": [
+      "Warner Music",
+      "Access Entertainment"
+    ],
+    "warmth": 22,
+    "status": "SELECTIVE",
+    "lastPrint": "Family office \u00b7 prestige/music",
+    "photo": "https://images.unsplash.com/photo-1515895309288-a3815ab7cfbd?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "The Chernin Group / North Road",
+    "organization": "The Chernin Group / North Road",
+    "ticker": "CHRN",
+    "subtype": "PE",
+    "city": "Los Angeles",
+    "website": "https://www.chernin.com",
+    "thesis": "Peter Chernin\u2019s media and sports platforms. Company-building, not one-off indie checks.",
+    "approach": "Keep on the map for a future AM hold-co conversation, not for MARINA\u2019s 90-day sprint.",
+    "aum": "Media platforms",
+    "ticketMin": 10000000,
+    "ticketMax": 200000000,
+    "genres": [
+      "TV",
+      "Franchise",
+      "Sports",
+      "Digital"
+    ],
+    "stages": [
+      "Platform",
+      "Slate",
+      "Acquisition"
+    ],
+    "geos": [
+      "US"
+    ],
+    "taxCredits": [
+      "CA",
+      "NY",
+      "GA"
+    ],
+    "markets": [
+      "Cannes"
+    ],
+    "notable": [
+      "The North Road",
+      "media growth equity"
+    ],
+    "warmth": 20,
+    "status": "SELECTIVE",
+    "lastPrint": "Media growth equity",
+    "photo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "TPG",
+    "organization": "TPG",
+    "ticker": "TPG",
+    "subtype": "PE",
+    "city": "San Francisco / Fort Worth",
+    "website": "https://www.tpg.com",
+    "thesis": "Control and large minority stakes in media companies. Will not read a short-film deck. Useful as a \u2018who bought the last buyer\u2019 overlay.",
+    "approach": "Do not outreach on a picture. Track as upstream owner of possible buyers.",
+    "aum": "Mega-cap PE",
+    "ticketMin": 50000000,
+    "ticketMax": 1000000000,
+    "genres": [
+      "Studio",
+      "Franchise",
+      "Platform"
+    ],
+    "stages": [
+      "Acquisition",
+      "Platform"
+    ],
+    "geos": [
+      "US",
+      "World"
+    ],
+    "taxCredits": [],
+    "markets": [],
+    "notable": [
+      "Historic STX / media deals"
+    ],
+    "warmth": 8,
+    "status": "CLOSED",
+    "lastPrint": "Control PE \u00b7 media companies",
+    "photo": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "Anton Capital Entertainment",
+    "organization": "Anton Capital Entertainment",
+    "ticker": "ANTN",
+    "subtype": "PE",
+    "city": "Paris / London",
+    "website": "https://www.antoncapital.com",
+    "thesis": "One of the few dedicated European private-equity film vehicles. Slate and larger independent features, often with a European co-production spine.",
+    "approach": "Feature pathway with EU spend. DANTE-scale literary is closer than a Nevada short.",
+    "aum": "European film PE",
+    "ticketMin": 5000000,
+    "ticketMax": 40000000,
+    "genres": [
+      "Drama",
+      "Prestige",
+      "Thriller",
+      "Literary"
+    ],
+    "stages": [
+      "Production",
+      "Slate"
+    ],
+    "geos": [
+      "EU",
+      "UK",
+      "US"
+    ],
+    "taxCredits": [
+      "FR",
+      "UK",
+      "EU"
+    ],
+    "markets": [
+      "Cannes",
+      "EFM",
+      "Berlin"
+    ],
+    "notable": [
+      "European film private equity"
+    ],
+    "warmth": 38,
+    "status": "SELECTIVE",
+    "lastPrint": "EU film PE",
+    "photo": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "Ares Management \u2014 Media Credit",
+    "organization": "Ares Management \u2014 Media Credit",
+    "ticker": "ARES",
+    "subtype": "PE",
+    "city": "Los Angeles / New York",
+    "website": "https://www.aresmgmt.com",
+    "thesis": "Large media credit: slates, libraries, receivables. Not a $850k short. On the desk so you do not waste a week writing them.",
+    "approach": "Ignore for current producer books. Revisit if AM ever packages a library or multi-picture credit facility.",
+    "aum": "Alt-credit mega fund",
+    "ticketMin": 25000000,
+    "ticketMax": 400000000,
+    "genres": [
+      "Studio",
+      "Library",
+      "Slate"
+    ],
+    "stages": [
+      "Slate",
+      "Acquisition"
+    ],
+    "geos": [
+      "US"
+    ],
+    "taxCredits": [],
+    "markets": [],
+    "notable": [
+      "Media credit platform"
+    ],
+    "warmth": 10,
+    "status": "CLOSED",
+    "lastPrint": "Library / slate credit",
+    "photo": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "investor",
+    "name": "Village Roadshow Entertainment",
+    "organization": "Village Roadshow Entertainment",
+    "ticker": "VRGE",
+    "subtype": "STUDIO",
+    "city": "Los Angeles / Australia",
+    "website": "https://www.vreg.com",
+    "thesis": "Studio-scale co-finance and library. Wrong ticket for current 90-day sprints unless a studio picture is already moving.",
+    "approach": "Watchlist as a studio-level name only.",
+    "aum": "Studio co-finance / library",
+    "ticketMin": 20000000,
+    "ticketMax": 150000000,
+    "genres": [
+      "Franchise",
+      "Action",
+      "Studio"
+    ],
+    "stages": [
+      "Production",
+      "Slate"
+    ],
+    "geos": [
+      "US",
+      "AU"
+    ],
+    "taxCredits": [
+      "AU",
+      "GA",
+      "UK"
+    ],
+    "markets": [
+      "Cannes",
+      "AFM"
+    ],
+    "notable": [
+      "The Matrix (historical co-finance)",
+      "Ocean\u2019s"
+    ],
+    "warmth": 14,
+    "status": "SELECTIVE",
+    "lastPrint": "Studio co-finance",
+    "photo": "https://images.unsplash.com/photo-1534447677768-be436bb05459?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  }
+]

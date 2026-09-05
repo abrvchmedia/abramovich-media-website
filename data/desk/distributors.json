@@ -1,0 +1,481 @@
+[
+  {
+    "kind": "distribution",
+    "name": "Cinetic Media",
+    "organization": "Cinetic Media",
+    "ticker": "CNET",
+    "subtype": "SALES",
+    "city": "New York",
+    "website": "https://www.cineticmedia.com",
+    "thesis": "Advisory, packaging, and sales \u2014 the people who know which buyer is actually in the market this week. Not a principal check.",
+    "approach": "High-value intro desk for MARINA\u2019s festival/feature pathway and for any picture that needs a North American buyer map.",
+    "aum": "Advisory / sales",
+    "ticketMin": 200000,
+    "ticketMax": 20000000,
+    "genres": [
+      "Drama",
+      "Festival",
+      "Documentary",
+      "Prestige",
+      "Character"
+    ],
+    "stages": [
+      "Development",
+      "Completed",
+      "Sales"
+    ],
+    "geos": [
+      "US"
+    ],
+    "taxCredits": [
+      "NY",
+      "GA"
+    ],
+    "markets": [
+      "Sundance",
+      "TIFF",
+      "Cannes",
+      "AFM"
+    ],
+    "notable": [
+      "Independent film advisory"
+    ],
+    "warmth": 80,
+    "status": "ACTIVE",
+    "lastPrint": "Advisory \u00b7 buyer map",
+    "photo": "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "distribution",
+    "name": "Highland Film Group",
+    "organization": "Highland Film Group",
+    "ticker": "HLND",
+    "subtype": "SALES",
+    "city": "Los Angeles",
+    "website": "https://www.highlandfilmgroup.com",
+    "thesis": "International sales with minimum guarantees that can be banked. Genre and star-driven travel best. A short with a feature pathway is a market conversation, not an MG.",
+    "approach": "AFM November is the live window for MARINA sales-readiness and FLOAT TELLER pre-sales lane. Go with a one-sheet, comps, and who controls rights.",
+    "aum": "Sales + MG / pre-sale",
+    "ticketMin": 500000,
+    "ticketMax": 15000000,
+    "genres": [
+      "Action",
+      "Thriller",
+      "Horror",
+      "Crime",
+      "Drama"
+    ],
+    "stages": [
+      "Pre-production",
+      "Production",
+      "Completed"
+    ],
+    "geos": [
+      "US",
+      "World"
+    ],
+    "taxCredits": [
+      "GA",
+      "NM",
+      "NV"
+    ],
+    "markets": [
+      "AFM",
+      "Cannes",
+      "EFM",
+      "TIFF"
+    ],
+    "notable": [
+      "AFM / Cannes regulars"
+    ],
+    "warmth": 79,
+    "status": "ACTIVE",
+    "lastPrint": "AFM pre-sale grid",
+    "photo": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "distribution",
+    "name": "XYZ Films",
+    "organization": "XYZ Films",
+    "ticker": "XYZF",
+    "subtype": "SALES",
+    "city": "Los Angeles",
+    "website": "https://www.xyzfilms.com",
+    "thesis": "Genre-forward sales and production. Thriller, action, horror with a distinct filmmaker. Fast AFM conversation if the tone is sharp.",
+    "approach": "Strong FLOAT TELLER / thriller-adjacent call. Weak for a quiet character short unless the feature pathway is genre.",
+    "aum": "Genre sales / production",
+    "ticketMin": 300000,
+    "ticketMax": 8000000,
+    "genres": [
+      "Thriller",
+      "Horror",
+      "Action",
+      "Crime"
+    ],
+    "stages": [
+      "Development",
+      "Pre-production",
+      "Production"
+    ],
+    "geos": [
+      "US",
+      "World"
+    ],
+    "taxCredits": [
+      "NM",
+      "GA",
+      "NV"
+    ],
+    "markets": [
+      "AFM",
+      "Cannes",
+      "Sitges"
+    ],
+    "notable": [
+      "The Raid",
+      "Brawl in Cell Block 99"
+    ],
+    "warmth": 75,
+    "status": "ACTIVE",
+    "lastPrint": "Genre sales",
+    "photo": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "distribution",
+    "name": "Voltage Pictures",
+    "organization": "Voltage Pictures",
+    "ticker": "VOLT",
+    "subtype": "SALES",
+    "city": "Los Angeles",
+    "website": "https://www.voltagepictures.com",
+    "thesis": "Sales company that can also structure finance against territory. Stronger when there is a director, a cast element, and a genre the foreign buyers already understand.",
+    "approach": "Market intro with a territory map. Do not lead with \u2018we need equity\u2019 \u2014 lead with what is sellable.",
+    "aum": "Sales / finance",
+    "ticketMin": 1000000,
+    "ticketMax": 30000000,
+    "genres": [
+      "Thriller",
+      "Action",
+      "Drama",
+      "War",
+      "Crime"
+    ],
+    "stages": [
+      "Development",
+      "Pre-production",
+      "Production"
+    ],
+    "geos": [
+      "US",
+      "World"
+    ],
+    "taxCredits": [
+      "GA",
+      "UK",
+      "CA"
+    ],
+    "markets": [
+      "AFM",
+      "Cannes",
+      "EFM"
+    ],
+    "notable": [
+      "The Hurt Locker",
+      "Dallas Buyers Club"
+    ],
+    "warmth": 68,
+    "status": "SELECTIVE",
+    "lastPrint": "Territory MG + equity hole",
+    "photo": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "distribution",
+    "name": "CAA Media Finance",
+    "organization": "CAA Media Finance",
+    "ticker": "CAAM",
+    "subtype": "SALES",
+    "city": "Los Angeles",
+    "website": "https://www.caa.com",
+    "thesis": "Packaging and finance introductions inside CAA. They do not replace your lawyer. They amplify a package that already has title, a filmmaker, and a budget.",
+    "approach": "Use when there is a CAA-adjacent element or a package worth putting in front of their finance group. AM is not a talent agent \u2014 this is a capital intro, papered.",
+    "aum": "Agency finance group",
+    "ticketMin": 2000000,
+    "ticketMax": 50000000,
+    "genres": [
+      "Drama",
+      "Thriller",
+      "Comedy",
+      "Prestige",
+      "Franchise"
+    ],
+    "stages": [
+      "Development",
+      "Pre-production"
+    ],
+    "geos": [
+      "US"
+    ],
+    "taxCredits": [
+      "GA",
+      "NM",
+      "UK"
+    ],
+    "markets": [
+      "Cannes",
+      "AFM",
+      "EFM"
+    ],
+    "notable": [
+      "Agency finance desk"
+    ],
+    "warmth": 52,
+    "status": "SELECTIVE",
+    "lastPrint": "Packaging / finance intro",
+    "photo": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "distribution",
+    "name": "Sierra / Affinity",
+    "organization": "Sierra / Affinity",
+    "ticker": "SRRA",
+    "subtype": "SALES",
+    "city": "Los Angeles",
+    "website": "https://www.sierra-affinity.com",
+    "thesis": "High-end international sales. Bigger packages, real directors, bankable cast. Pre-sales that senior lenders will actually discount.",
+    "approach": "Locked / Dante band more than MARINA. Intro only with a serious package.",
+    "aum": "International sales",
+    "ticketMin": 2000000,
+    "ticketMax": 40000000,
+    "genres": [
+      "Thriller",
+      "Action",
+      "Drama",
+      "Prestige"
+    ],
+    "stages": [
+      "Pre-production",
+      "Production"
+    ],
+    "geos": [
+      "US",
+      "World"
+    ],
+    "taxCredits": [
+      "UK",
+      "GA",
+      "CA"
+    ],
+    "markets": [
+      "Cannes",
+      "AFM",
+      "EFM"
+    ],
+    "notable": [
+      "Premium international sales"
+    ],
+    "warmth": 49,
+    "status": "SELECTIVE",
+    "lastPrint": "Premium territory sales",
+    "photo": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "distribution",
+    "name": "Fifth Season",
+    "organization": "Fifth Season",
+    "ticker": "FTHS",
+    "subtype": "STUDIO",
+    "city": "Los Angeles / London",
+    "website": "https://www.fifthseason.com",
+    "thesis": "Independent studio and financier with international sales DNA. Features and series with a clear global buyer map.",
+    "approach": "Sales-aware packages. A feature pathway with cast will travel further than a short.",
+    "aum": "Global studio (ex-Endeavor Content)",
+    "ticketMin": 5000000,
+    "ticketMax": 100000000,
+    "genres": [
+      "Drama",
+      "Thriller",
+      "TV",
+      "Prestige"
+    ],
+    "stages": [
+      "Development",
+      "Pre-production",
+      "Production"
+    ],
+    "geos": [
+      "US",
+      "UK",
+      "World"
+    ],
+    "taxCredits": [
+      "UK",
+      "GA",
+      "CA"
+    ],
+    "markets": [
+      "Cannes",
+      "EFM",
+      "AFM",
+      "MIPCOM"
+    ],
+    "notable": [
+      "Former Endeavor Content catalogue"
+    ],
+    "warmth": 55,
+    "status": "ACTIVE",
+    "lastPrint": "Global indie studio",
+    "photo": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "distribution",
+    "name": "NEON",
+    "organization": "NEON",
+    "ticker": "NEON",
+    "subtype": "STUDIO",
+    "city": "New York",
+    "website": "https://www.neonrated.com",
+    "thesis": "Buyer more than financier. Acquires finished and late-stage festival pictures. P&A and distribution, occasionally production.",
+    "approach": "A destination for a finished MARINA or a festival feature \u2014 not an opening-equity call.",
+    "aum": "Specialty distributor",
+    "ticketMin": 1000000,
+    "ticketMax": 25000000,
+    "genres": [
+      "Drama",
+      "Festival",
+      "Prestige",
+      "Awards",
+      "Thriller"
+    ],
+    "stages": [
+      "Completed",
+      "Production"
+    ],
+    "geos": [
+      "US"
+    ],
+    "taxCredits": [
+      "NY"
+    ],
+    "markets": [
+      "Cannes",
+      "Sundance",
+      "TIFF"
+    ],
+    "notable": [
+      "Parasite",
+      "Anatomy of a Fall"
+    ],
+    "warmth": 42,
+    "status": "SELECTIVE",
+    "lastPrint": "Specialty acquisition",
+    "photo": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "distribution",
+    "name": "MRC",
+    "organization": "MRC",
+    "ticker": "MRC",
+    "subtype": "STUDIO",
+    "city": "Los Angeles",
+    "website": "https://www.mrcstudios.com",
+    "thesis": "Film and TV studio with a history of prestige and commercial. Treat as a buyer/co-financer of packaged pictures, not a gap lender.",
+    "approach": "Packaging conversation once title is clean and talent is real. Not a development dump.",
+    "aum": "Studio / TV",
+    "ticketMin": 8000000,
+    "ticketMax": 80000000,
+    "genres": [
+      "Drama",
+      "Thriller",
+      "TV",
+      "Prestige"
+    ],
+    "stages": [
+      "Development",
+      "Production"
+    ],
+    "geos": [
+      "US"
+    ],
+    "taxCredits": [
+      "GA",
+      "CA",
+      "NY"
+    ],
+    "markets": [
+      "Cannes",
+      "TIFF"
+    ],
+    "notable": [
+      "Ted Lasso",
+      "The Twilight Saga (historical)"
+    ],
+    "warmth": 40,
+    "status": "SELECTIVE",
+    "lastPrint": "Studio co-finance",
+    "photo": "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  },
+  {
+    "kind": "distribution",
+    "name": "Village Roadshow Entertainment",
+    "organization": "Village Roadshow Entertainment",
+    "ticker": "VRGE",
+    "subtype": "STUDIO",
+    "city": "Los Angeles / Australia",
+    "website": "https://www.vreg.com",
+    "thesis": "Studio-scale co-finance and library. Wrong ticket for current 90-day sprints unless a studio picture is already moving.",
+    "approach": "Watchlist as a studio-level name only.",
+    "aum": "Studio co-finance / library",
+    "ticketMin": 20000000,
+    "ticketMax": 150000000,
+    "genres": [
+      "Franchise",
+      "Action",
+      "Studio"
+    ],
+    "stages": [
+      "Production",
+      "Slate"
+    ],
+    "geos": [
+      "US",
+      "AU"
+    ],
+    "taxCredits": [
+      "AU",
+      "GA",
+      "UK"
+    ],
+    "markets": [
+      "Cannes",
+      "AFM"
+    ],
+    "notable": [
+      "The Matrix (historical co-finance)",
+      "Ocean\u2019s"
+    ],
+    "warmth": 14,
+    "status": "SELECTIVE",
+    "lastPrint": "Studio co-finance",
+    "photo": "https://images.unsplash.com/photo-1534447677768-be436bb05459?auto=format&fit=crop&w=1200&q=80",
+    "source": "seed",
+    "sourceProvider": "manual"
+  }
+]

@@ -174,3 +174,11 @@ input, textarea {
     margin-right: auto;
   }
 }
+
+@keyframes desk-ticker {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.desk-ticker {
+  animation: desk-ticker 42s linear infinite;
+}

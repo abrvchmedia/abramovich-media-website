@@ -87,6 +87,12 @@ export default function AdminDashboard() {
           Pipeline tracker
         </Link>
         <Link
+          href="/desk"
+          className="bg-accent/15 text-accent font-semibold px-4 py-2.5 rounded-lg text-sm hover:bg-accent/25 transition-colors border border-accent/30"
+        >
+          Industry desk
+        </Link>
+        <Link
           href="/admin/pages/new"
           className="bg-accent text-navy font-semibold px-4 py-2.5 rounded-lg text-sm hover:bg-accent/90 transition-colors"
         >

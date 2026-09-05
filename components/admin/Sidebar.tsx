@@ -7,6 +7,7 @@ import { admin } from "@/lib/api";
 const navItems = [
   { href: "/admin", label: "Dashboard", icon: "◫" },
   { href: "/admin/pipeline", label: "Pipeline", icon: "◈" },
+  { href: "/desk", label: "Industry desk", icon: "▣" },
   { href: "/admin/pages", label: "Pages", icon: "☰" },
   { href: "/admin/posts", label: "Posts", icon: "✎" },
 ];

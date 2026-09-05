@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/admin/", "/api/admin/", "/proposals/"],
+        disallow: ["/admin/", "/api/admin/", "/proposals/", "/desk/", "/api/desk/"],
       },
     ],
     sitemap: "https://www.abramovichmedia.com/sitemap.xml",

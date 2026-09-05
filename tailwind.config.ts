@@ -20,6 +20,8 @@ const config: Config = {
       fontFamily: {
         sans: ["Inter", "sans-serif"],
         display: ["Inter", "sans-serif"],
+        desk: ["IBM Plex Sans", "Inter", "sans-serif"],
+        "desk-mono": ["IBM Plex Mono", "ui-monospace", "monospace"],
       },
       boxShadow: {
         card: "0 4px 32px 0 rgba(0,0,0,0.4)",

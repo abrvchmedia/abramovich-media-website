@@ -13,7 +13,10 @@ export async function middleware(request: NextRequest) {
     );
   }
 
-  const token = request.cookies.get("admin_token")?.value;
+  const adminToken = request.cookies.get("admin_token")?.value;
+  const deskToken = request.cookies.get("desk_token")?.value;
+  const token = adminToken;
+  const anyToken = deskToken || adminToken;
 
   const isLoginPage = pathname === "/admin/login";
   const isAdminPage = pathname.startsWith("/admin");
@@ -21,6 +24,15 @@ export async function middleware(request: NextRequest) {
     pathname.startsWith("/api/admin") &&
     !pathname.startsWith("/api/admin/login") &&
     !pathname.startsWith("/api/admin/logout");
+
+  const isDeskLogin =
+    pathname === "/desk/login" || pathname === "/desk/signup";
+  const isDeskPage = pathname === "/desk" || pathname.startsWith("/desk/");
+  const isDeskApi =
+    pathname.startsWith("/api/desk") &&
+    !pathname.startsWith("/api/desk/login") &&
+    !pathname.startsWith("/api/desk/signup") &&
+    !pathname.startsWith("/api/desk/logout");
 
   if (isAdminApi) {
     if (!token) {
@@ -59,6 +71,43 @@ export async function middleware(request: NextRequest) {
     }
   }
 
+  if (isDeskApi) {
+    if (!anyToken) {
+      return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    }
+    try {
+      await verifyToken(anyToken);
+      return NextResponse.next();
+    } catch {
+      return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    }
+  }
+
+  if (isDeskPage && !isDeskLogin) {
+    if (!anyToken) {
+      return NextResponse.redirect(new URL("/desk/login", request.url));
+    }
+    try {
+      await verifyToken(anyToken);
+      return NextResponse.next();
+    } catch {
+      const response = NextResponse.redirect(
+        new URL("/desk/login", request.url)
+      );
+      response.cookies.set("desk_token", "", { maxAge: 0, path: "/" });
+      return response;
+    }
+  }
+
+  if (isDeskLogin && anyToken) {
+    try {
+      await verifyToken(anyToken);
+      return NextResponse.redirect(new URL("/desk", request.url));
+    } catch {
+      /* invalid token, let them see login */
+    }
+  }
+
   return NextResponse.next();
 }
 
@@ -67,5 +116,8 @@ export const config = {
     "/proposals/uncoverresearch",
     "/admin/:path*",
     "/api/admin/:path*",
+    "/desk",
+    "/desk/:path*",
+    "/api/desk/:path*",
   ],
 };
