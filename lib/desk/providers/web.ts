@@ -127,6 +127,147 @@ export async function searchBing(query: string): Promise<DiscoveryHit[]> {
   return parseBingHits(await res.text());
 }
 
+type WikiSearchResponse = {
+  query?: {
+    search?: { title: string; snippet?: string }[];
+  };
+};
+
+export async function searchWikipedia(query: string): Promise<DiscoveryHit[]> {
+  const url = new URL("https://en.wikipedia.org/w/api.php");
+  url.searchParams.set("action", "query");
+  url.searchParams.set("list", "search");
+  url.searchParams.set("srsearch", query);
+  url.searchParams.set("utf8", "1");
+  url.searchParams.set("format", "json");
+  url.searchParams.set("srlimit", "8");
+  const res = await fetch(url.toString(), {
+    headers: { "user-agent": USER_AGENT, accept: "application/json" },
+    cache: "no-store",
+  });
+  if (!res.ok) throw new Error(`Wikipedia search failed (${res.status})`);
+  const json = (await res.json()) as WikiSearchResponse;
+  return (json.query?.search || []).map((row) => ({
+    title: row.title,
+    url: `https://en.wikipedia.org/wiki/${encodeURIComponent(row.title.replace(/ /g, "_"))}`,
+    snippet: stripTags(row.snippet || ""),
+    sourceProvider: "web",
+  }));
+}
+
+const DIRECTORIES: Record<DeskBookId, DiscoveryHit[]> = {
+  talent: [
+    {
+      title: "Backstage — casting calls",
+      url: "https://www.backstage.com/casting/",
+      snippet: "Public casting notices for actors, models, and crew.",
+      sourceProvider: "web",
+    },
+    {
+      title: "Actors Access",
+      url: "https://www.actorsaccess.com/",
+      snippet: "Breakdowns and submissions for represented talent.",
+      sourceProvider: "web",
+    },
+    {
+      title: "Casting Networks",
+      url: "https://www.castingnetworks.com/",
+      snippet: "Commercial and theatrical casting platform.",
+      sourceProvider: "web",
+    },
+  ],
+  distribution: [
+    {
+      title: "American Film Market",
+      url: "https://americanfilmmarket.com/",
+      snippet: "Sales agents, buyers, and market directory.",
+      sourceProvider: "web",
+    },
+    {
+      title: "Marché du Film — Cannes",
+      url: "https://www.marchedufilm.com/",
+      snippet: "International sales and distribution market.",
+      sourceProvider: "web",
+    },
+    {
+      title: "FilmFreeway",
+      url: "https://filmfreeway.com/",
+      snippet: "Festival and market submissions.",
+      sourceProvider: "web",
+    },
+  ],
+  investor: [
+    {
+      title: "Variety — Film Finance",
+      url: "https://variety.com/t/film-finance/",
+      snippet: "Trade coverage of funds, slates, and financiers.",
+      sourceProvider: "web",
+    },
+    {
+      title: "American Film Market",
+      url: "https://americanfilmmarket.com/",
+      snippet: "Where gap, sales, and equity desks meet packages.",
+      sourceProvider: "web",
+    },
+    {
+      title: "Deadline — Finance",
+      url: "https://deadline.com/category/film/finance/",
+      snippet: "Deal reporting on media funds and buyers.",
+      sourceProvider: "web",
+    },
+  ],
+  production: [
+    {
+      title: "Backstage — production jobs",
+      url: "https://www.backstage.com/casting/",
+      snippet: "Casting and production work notices.",
+      sourceProvider: "web",
+    },
+    {
+      title: "ProductionHUB",
+      url: "https://www.productionhub.com/jobs",
+      snippet: "Crew and production job listings.",
+      sourceProvider: "web",
+    },
+    {
+      title: "Entertainment Careers",
+      url: "https://www.entertainmentcareers.net/",
+      snippet: "Film, TV, and commercial production openings.",
+      sourceProvider: "web",
+    },
+  ],
+  brand: [
+    {
+      title: "AspireIQ marketplace",
+      url: "https://www.aspire.io/",
+      snippet: "Creator and brand campaign marketplace.",
+      sourceProvider: "web",
+    },
+    {
+      title: "Influencer Marketing Hub",
+      url: "https://influencermarketinghub.com/",
+      snippet: "Brand partnership listings and briefs.",
+      sourceProvider: "web",
+    },
+    {
+      title: "Backstage — commercial casting",
+      url: "https://www.backstage.com/casting/",
+      snippet: "On-camera commercial and branded-content notices.",
+      sourceProvider: "web",
+    },
+  ],
+};
+
+function directoryFallback(kind: DeskBookId, query: string): DiscoveryHit[] {
+  const q = query.trim().toLowerCase();
+  const rows = DIRECTORIES[kind] || [];
+  if (!q) return rows;
+  const matched = rows.filter((row) =>
+    `${row.title} ${row.snippet}`.toLowerCase().includes(q)
+  );
+  return matched.length ? matched : rows;
+}
+
 export async function crawlPublicPage(url: string): Promise<{
   title: string;
   snippet: string;
@@ -172,21 +313,25 @@ export const webProvider: DiscoveryProvider = {
         if (hits.length) {
           note = "DuckDuckGo returned no parseable hits from this host; used Bing public results.";
         }
-      } catch (err) {
-        const message = err instanceof Error ? err.message : "Search failed";
-        return {
-          provider: "web",
-          configured: true,
-          query: q,
-          kind,
-          hits: [],
-          note: message,
-        };
+      } catch {
+        hits = [];
       }
     }
     if (hits.length === 0) {
+      try {
+        hits = await searchWikipedia(q);
+        if (hits.length) {
+          note =
+            "Datacenter crawl of DuckDuckGo/Bing returned no parseable HTML. Showing Wikipedia / public-web index hits. Add GOOGLE_CSE_ID + GOOGLE_API_KEY for Google.";
+        }
+      } catch {
+        hits = [];
+      }
+    }
+    if (hits.length === 0) {
+      hits = directoryFallback(kind, query);
       note =
-        "No public hits parsed. Save contacts manually, or add GOOGLE_CSE_ID + GOOGLE_API_KEY on Vercel.";
+        "Live HTML crawl was blocked from this host. Showing public industry directories you can save now. Add Google CSE keys for query search.";
     }
     return {
       provider: "web",
