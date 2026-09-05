@@ -466,6 +466,9 @@ export default function DeskApp() {
             {discoverNote && (
               <p className="text-xs text-[#5ad0e8] mt-3">{discoverNote}</p>
             )}
+            {discoverHits.length === 0 && !discoverBusy && discoverNote && (
+              <p className="text-sm text-[#7d8b9c] mt-4">No listings yet for this scan.</p>
+            )}
             <ul className="mt-4 space-y-3 max-h-[50vh] overflow-auto">
               {discoverHits.map((hit) => (
                 <li
@@ -636,6 +639,7 @@ function DetailPanel({
         </div>
         <dl className="grid grid-cols-2 gap-2 text-xs">
           <Info label="Stage" value={stageLabel(book, record.stage)} />
+          <Info label="Coverage" value={record.status || "ACTIVE"} />
           <Info label="Warmth" value={String(record.warmth)} />
           {(record.ticketMin || record.ticketMax) && (
             <Info

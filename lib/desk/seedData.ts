@@ -148,7 +148,7 @@ const brand: SeedRow[] = [
 ];
 
 function withDefaults(row: SeedRow): SeedRow {
-  return {
+  const merged: SeedRow = {
     stage: "lead",
     subtype: "",
     organization: row.organization || row.name,
@@ -188,6 +188,14 @@ function withDefaults(row: SeedRow): SeedRow {
     createdBy: "seed",
     ...row,
   };
+  merged.status = normalizeDeskStatus(merged.status);
+  return merged;
+}
+
+function normalizeDeskStatus(value: unknown): string {
+  const raw = String(value || "ACTIVE").toUpperCase();
+  if (["ACTIVE", "SELECTIVE", "CLOSED", "ARCHIVED"].includes(raw)) return raw;
+  return "ACTIVE";
 }
 
 export function getDeskSeedRecords(): SeedRow[] {

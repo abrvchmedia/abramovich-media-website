@@ -47,7 +47,7 @@ export interface IDeskRecord extends Document {
   notable: string[];
   warmth: number;
   watchlisted: boolean;
-  status: "ACTIVE" | "ARCHIVED";
+  status: "ACTIVE" | "SELECTIVE" | "CLOSED" | "ARCHIVED";
   source: string;
   sourceProvider: DeskSourceProvider;
   sourceUrl: string;
@@ -105,7 +105,7 @@ const DeskRecordSchema = new Schema<IDeskRecord>(
     watchlisted: { type: Boolean, default: false, index: true },
     status: {
       type: String,
-      enum: ["ACTIVE", "ARCHIVED"],
+      enum: ["ACTIVE", "SELECTIVE", "CLOSED", "ARCHIVED"],
       default: "ACTIVE",
       index: true,
     },

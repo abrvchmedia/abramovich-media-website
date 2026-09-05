@@ -56,12 +56,15 @@ const ALLOWED_UPDATES = [
 
 export async function ensureDeskSeed() {
   await dbConnect();
-  const count = await DeskRecord.countDocuments();
-  if (count > 0) return { seeded: false, count };
+  const already = await DeskRecord.findOne({ source: "seed" }).select("_id");
+  if (already) {
+    const count = await DeskRecord.countDocuments();
+    return { seeded: false, count };
+  }
 
   const rows = getDeskSeedRecords();
   if (rows.length === 0) return { seeded: false, count: 0 };
-  await DeskRecord.insertMany(rows);
+  await DeskRecord.insertMany(rows, { ordered: false });
   return { seeded: true, count: rows.length };
 }
 
@@ -126,9 +129,15 @@ export async function listDeskRecords(options: {
   watchlisted?: boolean;
   limit?: number;
 }) {
-  await ensureDeskSeed();
+  try {
+    await ensureDeskSeed();
+  } catch (err) {
+    console.error("Desk seed failed", err);
+  }
 
-  const filter: Record<string, unknown> = { status: "ACTIVE" };
+  const filter: Record<string, unknown> = {
+    status: { $ne: "ARCHIVED" },
+  };
   if (options.kind && isDeskBook(options.kind)) filter.kind = options.kind;
   if (options.stage && options.stage !== "all") filter.stage = options.stage;
   if (options.subtype && options.subtype !== "all") {
@@ -162,19 +171,24 @@ export async function listDeskRecords(options: {
 }
 
 export async function getDeskStats() {
-  await ensureDeskSeed();
+  try {
+    await ensureDeskSeed();
+  } catch (err) {
+    console.error("Desk seed failed", err);
+  }
 
+  const live = { status: { $ne: "ARCHIVED" } };
   const [byKind, byStage, watchlisted, total] = await Promise.all([
     DeskRecord.aggregate([
-      { $match: { status: "ACTIVE" } },
+      { $match: live },
       { $group: { _id: "$kind", count: { $sum: 1 } } },
     ]),
     DeskRecord.aggregate([
-      { $match: { status: "ACTIVE" } },
+      { $match: live },
       { $group: { _id: { kind: "$kind", stage: "$stage" }, count: { $sum: 1 } } },
     ]),
-    DeskRecord.countDocuments({ status: "ACTIVE", watchlisted: true }),
-    DeskRecord.countDocuments({ status: "ACTIVE" }),
+    DeskRecord.countDocuments({ ...live, watchlisted: true }),
+    DeskRecord.countDocuments(live),
   ]);
 
   const kinds: Record<string, number> = {};
@@ -188,7 +202,7 @@ export async function getDeskStats() {
     stages[kind][stage] = row.count;
   }
 
-  const recent = await DeskRecord.find({ status: "ACTIVE" })
+  const recent = await DeskRecord.find(live)
     .sort({ updatedAt: -1 })
     .limit(12)
     .select("name kind subtype city lastPrint updatedAt warmth");

@@ -7,7 +7,7 @@ import {
 } from "./types";
 
 const USER_AGENT =
-  "AbramovichMediaDesk/1.0 (+https://www.abramovichmedia.com/desk)";
+  "Mozilla/5.0 (compatible; AbramovichMediaDesk/1.0; +https://www.abramovichmedia.com/desk)";
 
 function decodeDuckHref(href: string): string {
   try {
@@ -27,15 +27,75 @@ function stripTags(html: string) {
     .replace(/&amp;/g, "&")
     .replace(/&quot;/g, '"')
     .replace(/&#39;/g, "'")
+    .replace(/&nbsp;/g, " ")
     .replace(/&lt;/g, "<")
     .replace(/&gt;/g, ">")
     .replace(/\s+/g, " ")
     .trim();
 }
 
-export async function searchDuckDuckGo(
-  query: string
-): Promise<DiscoveryHit[]> {
+function isUsableUrl(url: string) {
+  if (!url.startsWith("http")) return false;
+  const blocked = [
+    "duckduckgo.com",
+    "bing.com",
+    "microsoft.com",
+    "google.com",
+    "googleusercontent.com",
+  ];
+  try {
+    const host = new URL(url).hostname.replace(/^www\./, "");
+    return !blocked.some((b) => host === b || host.endsWith(`.${b}`));
+  } catch {
+    return false;
+  }
+}
+
+function parseDuckHits(html: string): DiscoveryHit[] {
+  const hits: DiscoveryHit[] = [];
+  const seen = new Set<string>();
+  const patterns = [
+    /<a[^>]*class="[^"]*result__a[^"]*"[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>[\s\S]*?(?:class="result__snippet"[^>]*>([\s\S]*?)<\/)?/gi,
+    /<a[^>]*class="[^"]*result-link[^"]*"[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi,
+  ];
+  for (const blockRe of patterns) {
+    let match: RegExpExecArray | null;
+    while ((match = blockRe.exec(html)) && hits.length < 12) {
+      const url = decodeDuckHref(match[1]);
+      if (!isUsableUrl(url) || seen.has(url)) continue;
+      seen.add(url);
+      hits.push({
+        title: stripTags(match[2]).slice(0, 180) || url,
+        url,
+        snippet: stripTags(match[3] || "").slice(0, 280),
+        sourceProvider: "web",
+      });
+    }
+  }
+  return hits;
+}
+
+function parseBingHits(html: string): DiscoveryHit[] {
+  const hits: DiscoveryHit[] = [];
+  const seen = new Set<string>();
+  const blockRe =
+    /<li class="b_algo"[\s\S]*?<h2[^>]*>\s*<a[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>[\s\S]*?(?:<p[^>]*>([\s\S]*?)<\/p>)?/gi;
+  let match: RegExpExecArray | null;
+  while ((match = blockRe.exec(html)) && hits.length < 12) {
+    const url = match[1];
+    if (!isUsableUrl(url) || seen.has(url)) continue;
+    seen.add(url);
+    hits.push({
+      title: stripTags(match[2]).slice(0, 180) || url,
+      url,
+      snippet: stripTags(match[3] || "").slice(0, 280),
+      sourceProvider: "web",
+    });
+  }
+  return hits;
+}
+
+export async function searchDuckDuckGo(query: string): Promise<DiscoveryHit[]> {
   const body = new URLSearchParams({ q: query, kl: "us-en" });
   const res = await fetch("https://html.duckduckgo.com/html/", {
     method: "POST",
@@ -49,23 +109,22 @@ export async function searchDuckDuckGo(
   if (!res.ok) {
     throw new Error(`Web search failed (${res.status})`);
   }
-  const html = await res.text();
-  const hits: DiscoveryHit[] = [];
-  const blockRe =
-    /<a[^>]*class="[^"]*result__a[^"]*"[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>[\s\S]*?(?:class="result__snippet"[^>]*>([\s\S]*?)<\/)/gi;
-  let match: RegExpExecArray | null;
-  while ((match = blockRe.exec(html)) && hits.length < 12) {
-    const url = decodeDuckHref(match[1]);
-    if (!url.startsWith("http")) continue;
-    if (url.includes("duckduckgo.com")) continue;
-    hits.push({
-      title: stripTags(match[2]).slice(0, 180),
-      url,
-      snippet: stripTags(match[3] || "").slice(0, 280),
-      sourceProvider: "web",
-    });
+  return parseDuckHits(await res.text());
+}
+
+export async function searchBing(query: string): Promise<DiscoveryHit[]> {
+  const url = `https://www.bing.com/search?q=${encodeURIComponent(query)}`;
+  const res = await fetch(url, {
+    headers: {
+      "user-agent": USER_AGENT,
+      accept: "text/html",
+    },
+    cache: "no-store",
+  });
+  if (!res.ok) {
+    throw new Error(`Web search fallback failed (${res.status})`);
   }
-  return hits;
+  return parseBingHits(await res.text());
 }
 
 export async function crawlPublicPage(url: string): Promise<{
@@ -100,14 +159,42 @@ export const webProvider: DiscoveryProvider = {
   configured: () => true,
   async search({ query, kind }): Promise<DiscoveryResult> {
     const q = `${query} ${kindSearchSuffix(kind)}`.trim();
-    const hits = await searchDuckDuckGo(q);
+    let hits: DiscoveryHit[] = [];
+    let note = "Public web crawl. Social graph sources can be plugged in later.";
+    try {
+      hits = await searchDuckDuckGo(q);
+    } catch {
+      hits = [];
+    }
+    if (hits.length === 0) {
+      try {
+        hits = await searchBing(q);
+        if (hits.length) {
+          note = "DuckDuckGo returned no parseable hits from this host; used Bing public results.";
+        }
+      } catch (err) {
+        const message = err instanceof Error ? err.message : "Search failed";
+        return {
+          provider: "web",
+          configured: true,
+          query: q,
+          kind,
+          hits: [],
+          note: message,
+        };
+      }
+    }
+    if (hits.length === 0) {
+      note =
+        "No public hits parsed. Save contacts manually, or add GOOGLE_CSE_ID + GOOGLE_API_KEY on Vercel.";
+    }
     return {
       provider: "web",
       configured: true,
       query: q,
       kind,
       hits,
-      note: "Public web crawl. Social graph sources can be plugged in later.",
+      note,
     };
   },
 };
