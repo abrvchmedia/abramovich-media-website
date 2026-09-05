@@ -2,6 +2,7 @@ import bcrypt from "bcryptjs";
 import dbConnect from "@/backend/utils/dbConnect";
 import DeskUser from "@/backend/models/DeskUser";
 import { signDeskToken } from "@/backend/middleware/deskAuth";
+import { ensureDefaultAccounts } from "@/backend/controllers/defaultAccounts";
 
 function normalizeEmail(email: string) {
   return email.trim().toLowerCase();
@@ -21,8 +22,8 @@ export async function signupDeskUser(input: {
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     throw new Error("Valid email is required");
   }
-  if (password.length < 8) {
-    throw new Error("Password must be at least 8 characters");
+  if (password.length < 6) {
+    throw new Error("Password must be at least 6 characters");
   }
 
   const requiredInvite = process.env.DESK_INVITE_CODE;
@@ -63,6 +64,7 @@ export async function signupDeskUser(input: {
 
 export async function loginDeskUser(email: string, password: string) {
   await dbConnect();
+  await ensureDefaultAccounts();
 
   const user = await DeskUser.findOne({ email: normalizeEmail(email) });
   if (!user) throw new Error("Invalid credentials");

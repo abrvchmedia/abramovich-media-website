@@ -6,6 +6,7 @@ import {
   type DeskBookId,
 } from "@/lib/desk/kinds";
 import { getDeskSeedRecords } from "@/lib/desk/seedData";
+import { ensureDefaultAccounts } from "@/backend/controllers/defaultAccounts";
 
 const ALLOWED_UPDATES = [
   "kind",
@@ -56,6 +57,7 @@ const ALLOWED_UPDATES = [
 
 export async function ensureDeskSeed() {
   await dbConnect();
+  await ensureDefaultAccounts();
   const already = await DeskRecord.findOne({ source: "seed" }).select("_id");
   if (already) {
     const count = await DeskRecord.countDocuments();

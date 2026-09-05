@@ -5,12 +5,20 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { deskApi } from "@/lib/desk/client";
+import {
+  DEFAULT_DESK_EMAIL,
+  DEFAULT_DESK_PASSWORD,
+} from "@/lib/desk/defaults";
 
 export default function DeskAuthCard({ mode }: { mode: "login" | "signup" }) {
   const router = useRouter();
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState(
+    mode === "login" ? DEFAULT_DESK_EMAIL : ""
+  );
+  const [password, setPassword] = useState(
+    mode === "login" ? DEFAULT_DESK_PASSWORD : ""
+  );
   const [inviteCode, setInviteCode] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -81,7 +89,7 @@ export default function DeskAuthCard({ mode }: { mode: "login" | "signup" }) {
               onChange={(e) => setEmail(e.target.value)}
               required
               className={inputClass}
-              placeholder="you@abramovichmedia.com"
+              placeholder={DEFAULT_DESK_EMAIL}
             />
           </Field>
 
@@ -91,9 +99,11 @@ export default function DeskAuthCard({ mode }: { mode: "login" | "signup" }) {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
-              minLength={mode === "signup" ? 8 : 1}
+              minLength={mode === "signup" ? 6 : 1}
               className={inputClass}
-              placeholder={mode === "signup" ? "At least 8 characters" : "••••••••"}
+              placeholder={
+                mode === "signup" ? "At least 6 characters" : DEFAULT_DESK_PASSWORD
+              }
             />
           </Field>
 
@@ -106,6 +116,12 @@ export default function DeskAuthCard({ mode }: { mode: "login" | "signup" }) {
                 placeholder="Optional unless DESK_INVITE_CODE is set"
               />
             </Field>
+          )}
+
+          {mode === "login" && (
+            <p className="text-[11px] font-mono text-[#7d8b9c]">
+              Default · {DEFAULT_DESK_EMAIL} · {DEFAULT_DESK_PASSWORD}
+            </p>
           )}
 
           <button

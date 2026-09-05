@@ -2,9 +2,11 @@ import bcrypt from "bcryptjs";
 import dbConnect from "@/backend/utils/dbConnect";
 import AdminUser from "@/backend/models/AdminUser";
 import { signToken } from "@/backend/middleware/auth";
+import { ensureDefaultAccounts } from "@/backend/controllers/defaultAccounts";
 
 export async function loginAdmin(email: string, password: string) {
   await dbConnect();
+  await ensureDefaultAccounts();
 
   const user = await AdminUser.findOne({ email: email.toLowerCase() });
   if (!user) throw new Error("Invalid credentials");

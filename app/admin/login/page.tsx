@@ -3,11 +3,15 @@
 import { useState, FormEvent } from "react";
 import { useRouter } from "next/navigation";
 import { admin } from "@/lib/api";
+import {
+  DEFAULT_DESK_EMAIL,
+  DEFAULT_DESK_PASSWORD,
+} from "@/lib/desk/defaults";
 
 export default function AdminLoginPage() {
   const router = useRouter();
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState(DEFAULT_DESK_EMAIL);
+  const [password, setPassword] = useState(DEFAULT_DESK_PASSWORD);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -56,7 +60,7 @@ export default function AdminLoginPage() {
               onChange={(e) => setEmail(e.target.value)}
               required
               className="w-full bg-white/5 border border-white/10 text-white rounded-lg px-4 py-2.5 text-sm focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-colors placeholder:text-white/20"
-              placeholder="admin@example.com"
+              placeholder={DEFAULT_DESK_EMAIL}
             />
           </div>
 

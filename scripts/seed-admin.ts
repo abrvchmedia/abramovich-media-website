@@ -26,7 +26,7 @@ async function seed() {
     mongoose.model("AdminUser", AdminUserSchema);
 
   const email = process.argv[2] || "admin@abramovichmedia.com";
-  const password = process.argv[3] || "admin123";
+  const password = process.argv[3] || "abc123";
 
   const hashed = await bcrypt.hash(password, 12);
 
